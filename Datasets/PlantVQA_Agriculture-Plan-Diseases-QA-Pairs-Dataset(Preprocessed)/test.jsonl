@@ -1,0 +1,474 @@
+{"question": "Can you trace the cause of this vegetation's appearance?", "answer": "The mosaic pattern of light and dark green areas is a classic symptom of ToMV.", "split": "test"}
+{"question": "Which visible features and identifying attributes are present in this botanical sample?", "answer": "The plant is infected with Tomato Mosaic Virus.", "split": "test"}
+{"question": "What observable attributes and identifying characteristics are evident in this plant specimen?", "answer": "The fungus Alternaria solani, which causes Early Blight, is responsible.", "split": "test"}
+{"question": "What visible attributes and distinguishing marks identify this plant specimen?", "answer": "This is a Corn leaf suffering from Common rust.", "split": "test"}
+{"question": "What visual features would return upon this specimen's complete health restoration?", "answer": "A healthy leaf would be uniformly green and free of the symptoms of disease.", "split": "test"}
+{"question": "I require a comprehensive description of this specimen and its current condition.", "answer": "This is a Apple leaf suffering from Cedar apple rust.", "split": "test"}
+{"question": "Can you provide a precise disease identification based on visual evidence?", "answer": "Leaf blight Isariopsis Leaf Spot", "split": "test"}
+{"question": "Can you trace the ultimate source of this pathology?", "answer": "The disease is Target Spot, marked by dark, concentric 'bullseye' lesions.", "split": "test"}
+{"question": "If this plant were restored to health, how would its appearance transform?", "answer": "The key visual difference would be the absence of circular spots with target-like patterns.", "split": "test"}
+{"question": "Which factor accounts for this specimen's condition?", "answer": "The fungus Alternaria solani, which causes Early Blight, is responsible.", "split": "test"}
+{"question": "What visual characteristics would reappear upon this specimen's health recovery?", "answer": "A healthy leaf would be uniformly green and free of the circular spots with target-like patterns.", "split": "test"}
+{"question": "Based on what's visible, what is the pathological diagnosis?", "answer": "Cedar apple rust", "split": "test"}
+{"question": "What disease state does this plant exhibit?", "answer": "The plant is affected by Bacterial Spot disease.", "split": "test"}
+{"question": "Provide the most exact pathological identification.", "answer": "Esca Black Measles", "split": "test"}
+{"question": "Review the photograph and deliver a summarized plant evaluation.", "answer": "This is a Corn leaf suffering from Common rust.", "split": "test"}
+{"question": "Is precise disease identification possible from these visual symptoms?", "answer": "The plant is infected with Tomato Mosaic Virus.", "split": "test"}
+{"question": "Picture this plant in perfect condition - how would its appearance shift?", "answer": "The key visual difference would be the absence of yellow spots paired with olive-green undersurface fungus.", "split": "test"}
+{"question": "What precise pathological condition is this plant experiencing?", "answer": "This plant appears to be healthy and free of disease.", "split": "test"}
+{"question": "What plant-related elements and characteristics are visible in this photograph?", "answer": "The plant is infected with Tomato Mosaic Virus.", "split": "test"}
+{"question": "What specific ailment is responsible for these symptoms?", "answer": "The plant is infected with Tomato Mosaic Virus.", "split": "test"}
+{"question": "Identify the pathogen or disorder with full precision.", "answer": "The large, dark, water-soaked lesions are a key sign of Late Blight.", "split": "test"}
+{"question": "Can you identify the illness affecting this vegetation?", "answer": "Cedar apple rust", "split": "test"}
+{"question": "Study the picture and provide a comprehensive plant condition summary.", "answer": "This is Tomato Mosaic Virus (ToMV).", "split": "test"}
+{"question": "I require the proper pathological terminology for this condition.", "answer": "This is Tomato Mosaic Virus (ToMV).", "split": "test"}
+{"question": "Which pathological symptoms would be absent in an unaffected plant?", "answer": "A healthy version of this plant would not exhibit the circular spots with target-like patterns.", "split": "test"}
+{"question": "What disease symptoms would not exist in a healthy version of this plant?", "answer": "A healthy version of this plant would not exhibit the yellow spots paired with olive-green undersurface fungus.", "split": "test"}
+{"question": "What disease manifestations would not be present in a healthy state?", "answer": "The key visual difference would be the absence of light-dark green mosaic arrangements.", "split": "test"}
+{"question": "What creates these apparent symptomatic features?", "answer": "The leaf shows symptoms of Early Blight.", "split": "test"}
+{"question": "Outline the main subject and prominent features observable in this photograph.", "answer": "This plant appears to be healthy and free of disease.", "split": "test"}
+{"question": "Which disease affects this specimen?", "answer": "The leaf shows symptoms of Early Blight.", "split": "test"}
+{"question": "Which causative agent is responsible for these disease signs?", "answer": "The symptoms are characteristic of Black rot.", "split": "test"}
+{"question": "Share all observable information about this plant's existing health parameters.", "answer": "The mosaic pattern of light and dark green areas is a classic symptom of ToMV.", "split": "test"}
+{"question": "How does this leaf's state compare to healthy foliage, and what's striking?", "answer": "If the plant were healthy, the light-dark green mosaic arrangements would be absent.", "split": "test"}
+{"question": "Given the observable symptoms, what disease is present?", "answer": "Northern Leaf Blight", "split": "test"}
+{"question": "Can you provide a precise diagnosis for this plant's condition?", "answer": "The leaf shows symptoms of Early Blight.", "split": "test"}
+{"question": "Picture this plant in perfect condition - how would its appearance shift?", "answer": "A healthy version of this plant would not exhibit the light-dark green mosaic arrangements.", "split": "test"}
+{"question": "Please identify the specific problem affecting this plant.", "answer": "This is Tomato Mosaic Virus (ToMV).", "split": "test"}
+{"question": "Guide me through the leaf-related elements visible in this photograph.", "answer": "This is a Cherry leaf suffering from Powdery mildew.", "split": "test"}
+{"question": "Can you provide the specific pathological classification?", "answer": "Leaf blight Isariopsis Leaf Spot", "split": "test"}
+{"question": "Characterize the main focal point and distinctive elements visible in this photograph.", "answer": "This is a Strawberry leaf suffering from Leaf scorch.", "split": "test"}
+{"question": "Can you provide the scientific diagnosis for this foliage condition?", "answer": "The disease is Target Spot, marked by dark, concentric 'bullseye' lesions.", "split": "test"}
+{"question": "What basic factor initiated this plant's problems?", "answer": "The diagnosis is Target Spot.", "split": "test"}
+{"question": "What foundational issue created this plant's state?", "answer": "The diagnosis is Bacterial Spot.", "split": "test"}
+{"question": "What rationale explains these symptoms?", "answer": "The diagnosis is Bacterial Spot.", "split": "test"}
+{"question": "What is the general health assessment of this plant specimen?", "answer": "The plant is infected with Tomato Mosaic Virus.", "split": "test"}
+{"question": "What is the recognized pathological diagnosis for these symptoms?", "answer": "Northern Leaf Blight", "split": "test"}
+{"question": "Which disorder is present in this plant?", "answer": "The plant is suffering from a fungal infection: Septoria Leaf Spot.", "split": "test"}
+{"question": "Give the most precise diagnostic determination possible.", "answer": "The large, dark, water-soaked lesions are a key sign of Late Blight.", "split": "test"}
+{"question": "I require a complete account of this specimen and its visible characteristics.", "answer": "This is a Grape leaf suffering from Esca Black Measles.", "split": "test"}
+{"question": "What ailment is affecting this plant specimen?", "answer": "The pest responsible is the Two-spotted spider mite.", "split": "test"}
+{"question": "Deliver an in-depth analysis of the plant's appearance and physiological state.", "answer": "This is a Strawberry leaf suffering from Leaf scorch.", "split": "test"}
+{"question": "Communicate all available information concerning this plant's existing state.", "answer": "This is a Grape leaf suffering from Esca Black Measles.", "split": "test"}
+{"question": "What factors have led to this leaf's problems?", "answer": "The plant is infected with Target Spot fungus.", "split": "test"}
+{"question": "What visual manifestations would cease to exist post-recovery?", "answer": "A healthy version of this plant would not exhibit the circular spots with target-like patterns.", "split": "test"}
+{"question": "Can you determine the foundational cause of these signs?", "answer": "The plant is suffering from a Late Blight infection.", "split": "test"}
+{"question": "Which observable features and properties characterize this botanical sample?", "answer": "This is a Corn leaf suffering from Common rust.", "split": "test"}
+{"question": "In what ways does this specimen's appearance differ from healthy norms?", "answer": "The key visual difference would be the absence of light-dark green mosaic arrangements.", "split": "test"}
+{"question": "Which pathological signs would no longer be present after healing?", "answer": "A healthy leaf would be uniformly green and free of the circular spots with target-like patterns.", "split": "test"}
+{"question": "Based on symptomatology, what is your professional diagnosis?", "answer": "The diagnosis is Target Spot.", "split": "test"}
+{"question": "What primary agent is at the core of this condition?", "answer": "The symptoms, especially the olive-green mold on the leaf underside, indicate Leaf Mold.", "split": "test"}
+{"question": "What formal diagnosis would you assign to these symptoms?", "answer": "This is a fungal disease known as Leaf Mold.", "split": "test"}
+{"question": "Please identify the source of this leaf's problems.", "answer": "Diagnosis: Leaf Mold.", "split": "test"}
+{"question": "What is the definitive diagnosis for this plant's issues?", "answer": "This is a healthy plant leaf.", "split": "test"}
+{"question": "Which pathological indicators would not be present in an unaffected specimen?", "answer": "A healthy leaf would be uniformly green and free of the yellow spots paired with olive-green undersurface fungus.", "split": "test"}
+{"question": "What visual features would return upon this specimen's complete health restoration?", "answer": "The key visual difference would be the absence of yellow spots paired with olive-green undersurface fungus.", "split": "test"}
+{"question": "Examine this photograph and deliver a detailed botanical analysis.", "answer": "This is a Squash leaf suffering from Powdery mildew.", "split": "test"}
+{"question": "What core factor underlies these disease manifestations?", "answer": "The mosaic pattern of light and dark green areas is a classic symptom of ToMV.", "split": "test"}
+{"question": "What observable attributes and identifying characteristics are evident in this plant specimen?", "answer": "The mosaic pattern of light and dark green areas is a classic symptom of ToMV.", "split": "test"}
+{"question": "Which factor created this plant's health situation?", "answer": "The numerous small, angular spots are characteristic of Bacterial Spot.", "split": "test"}
+{"question": "Please provide an exhaustive description of this plant and its observable state.", "answer": "These 'bullseye' lesions are a tell-tale sign of Early Blight.", "split": "test"}
+{"question": "Please identify the source of this leaf's problems.", "answer": "The symptoms are characteristic of Esca Black Measles.", "split": "test"}
+{"question": "Guide me through the leaf-related elements visible in this photograph.", "answer": "This is a Squash leaf suffering from Powdery mildew.", "split": "test"}
+{"question": "Give the most precise diagnostic determination possible.", "answer": "The disease is Target Spot, marked by dark, concentric 'bullseye' lesions.", "split": "test"}
+{"question": "What fundamental factor produces these plant symptoms?", "answer": "The fungus Alternaria solani, which causes Early Blight, is responsible.", "split": "test"}
+{"question": "Provide the most exact pathological identification.", "answer": "This is Early Blight, identifiable by the 'target-like' concentric rings in the spots.", "split": "test"}
+{"question": "Lead me through the leaf-related observations in this photograph.", "answer": "This is Early Blight, identifiable by the 'target-like' concentric rings in the spots.", "split": "test"}
+{"question": "What apparent characteristics and observable properties define this plant specimen?", "answer": "This is a Apple leaf suffering from Black rot.", "split": "test"}
+{"question": "Which appearance attributes would be restored if this plant recovered wellness?", "answer": "A healthy version of this plant would not exhibit the yellow spots paired with olive-green undersurface fungus.", "split": "test"}
+{"question": "Identify the agent responsible for these disease signs.", "answer": "The diagnosis is Bacterial Spot.", "split": "test"}
+{"question": "What specific pathology is affecting this plant specimen?", "answer": "This is damage from Spider Mites.", "split": "test"}
+{"question": "Is precise disease identification possible from these visual symptoms?", "answer": "This plant appears to be healthy and free of disease.", "split": "test"}
+{"question": "Which condition is affecting this plant's health?", "answer": "The condition is identified as Late Blight.", "split": "test"}
+{"question": "Why does this specimen show these signs?", "answer": "The leaf shows symptoms of Early Blight.", "split": "test"}
+{"question": "What is the comprehensive wellness state of this botanical sample?", "answer": "This is a Cherry leaf suffering from Powdery mildew.", "split": "test"}
+{"question": "What fundamental factor produces these plant symptoms?", "answer": "The mosaic pattern of light and dark green areas is a classic symptom of ToMV.", "split": "test"}
+{"question": "Can you identify the primary source of this condition?", "answer": "The mosaic pattern of light and dark green areas is a classic symptom of ToMV.", "split": "test"}
+{"question": "I need a thorough characterization of this botanical sample and its condition.", "answer": "This is Tomato Mosaic Virus (ToMV).", "split": "test"}
+{"question": "Would you provide a detailed visual assessment of this plant material?", "answer": "This is a Strawberry leaf suffering from Leaf scorch.", "split": "test"}
+{"question": "Can you provide the technical diagnosis for this leaf condition?", "answer": "This is Bacterial Spot. Note the small, dark, water-soaked lesions.", "split": "test"}
+{"question": "What disease or disorder is this plant experiencing?", "answer": "The disease is Target Spot, marked by dark, concentric 'bullseye' lesions.", "split": "test"}
+{"question": "Picture this plant in optimal condition - how would its appearance alter?", "answer": "A healthy leaf would be uniformly green and free of the yellow spots paired with olive-green undersurface fungus.", "split": "test"}
+{"question": "What factors culminate in these visible signs?", "answer": "The fungus Alternaria solani, which causes Early Blight, is responsible.", "split": "test"}
+{"question": "Picture this plant in perfect condition - how would its appearance shift?", "answer": "The key visual difference would be the absence of light-dark green mosaic arrangements.", "split": "test"}
+{"question": "What symptoms might appear if this Corn were infected with Common rust?", "answer": "If the plant were healthy, the evidence of orange or brown pustular structures would be absent.", "split": "test"}
+{"question": "Lead me through the leaf-related observations in this photograph.", "answer": "This is a Grape leaf suffering from Esca Black Measles.", "split": "test"}
+{"question": "What diagnosis can be made from these visual indicators?", "answer": "Esca Black Measles", "split": "test"}
+{"question": "What rationale explains these symptoms?", "answer": "The disease is Target Spot, marked by dark, concentric 'bullseye' lesions.", "split": "test"}
+{"question": "How would you characterize the overall wellness status of this botanical sample?", "answer": "This is a Strawberry leaf suffering from Leaf scorch.", "split": "test"}
+{"question": "What primary agent is at the core of this condition?", "answer": "The symptoms are characteristic of Apple scab.", "split": "test"}
+{"question": "Can you determine why this foliage is compromised?", "answer": "The mosaic pattern of light and dark green areas is a classic symptom of ToMV.", "split": "test"}
+{"question": "Provide a comprehensive assessment of this plant's visual condition and wellness status.", "answer": "The mosaic pattern of light and dark green areas is a classic symptom of ToMV.", "split": "test"}
+{"question": "What appearance attributes would be restored upon this specimen's health recovery?", "answer": "A healthy leaf would be uniformly green and free of the circular spots with target-like patterns.", "split": "test"}
+{"question": "Provide the most precise disease identification you can.", "answer": "The condition is identified as Late Blight.", "split": "test"}
+{"question": "What observable traits and distinguishing elements characterize this plant specimen?", "answer": "The plant is affected by Bacterial Spot disease.", "split": "test"}
+{"question": "From this symptomatic presentation, what is your conclusion?", "answer": "Esca Black Measles", "split": "test"}
+{"question": "Can you determine the affliction causing these symptoms?", "answer": "Cercospora leaf spot Gray leaf spot", "split": "test"}
+{"question": "What is the original cause of this plant's disease state?", "answer": "The symptoms are characteristic of Apple scab.", "split": "test"}
+{"question": "Given these signs, what would be your clinical determination?", "answer": "Northern Leaf Blight", "split": "test"}
+{"question": "What brings about these observable symptoms?", "answer": "The symptoms are characteristic of Leaf scorch.", "split": "test"}
+{"question": "Can you identify the basic cause of these manifestations?", "answer": "The leaf shows symptoms of Early Blight.", "split": "test"}
+{"question": "Communicate all available information concerning this plant's existing state.", "answer": "The mosaic pattern of light and dark green areas is a classic symptom of ToMV.", "split": "test"}
+{"question": "Which disease affects this specimen?", "answer": "The diagnosis is Septoria Leaf Spot.", "split": "test"}
+{"question": "What visual features would return if this specimen regained optimal condition?", "answer": "The key visual difference would be the absence of symptoms of disease.", "split": "test"}
+{"question": "What visual features would return if this specimen regained optimal condition?", "answer": "The key visual difference would be the absence of yellow spots paired with olive-green undersurface fungus.", "split": "test"}
+{"question": "Name the disease with the highest level of specificity.", "answer": "The diagnosis is Target Spot.", "split": "test"}
+{"question": "Outline the main subject and prominent features observable in this photograph.", "answer": "This is a Cherry leaf suffering from Powdery mildew.", "split": "test"}
+{"question": "What pathogen or environmental factor produces these symptoms?", "answer": "The symptoms are characteristic of Black rot.", "split": "test"}
+{"question": "What precise pathological condition is this plant experiencing?", "answer": "The fungus Alternaria solani, which causes Early Blight, is responsible.", "split": "test"}
+{"question": "Assess this picture and provide a summarized botanical evaluation.", "answer": "These 'bullseye' lesions are a tell-tale sign of Early Blight.", "split": "test"}
+{"question": "Give the most precise diagnostic determination possible.", "answer": "Leaf blight Isariopsis Leaf Spot", "split": "test"}
+{"question": "How would you evaluate the overall physiological condition of this plant?", "answer": "The plant is infected with Target Spot fungus.", "split": "test"}
+{"question": "What's behind this plant's compromised visual state?", "answer": "The symptoms are characteristic of Powdery mildew.", "split": "test"}
+{"question": "Which features would be present in a healthy version but absent in this specimen?", "answer": "A healthy leaf would be uniformly green and free of the symptoms of disease.", "split": "test"}
+{"question": "Identify the factor generating these pathological signs.", "answer": "The symptoms are characteristic of Apple scab.", "split": "test"}
+{"question": "Communicate all visible aspects of this specimen's current state and condition.", "answer": "This is a Grape leaf suffering from Black rot.", "split": "test"}
+{"question": "Which pathological indicators would not be present in an unaffected specimen?", "answer": "A healthy leaf would be uniformly green and free of the circular spots with target-like patterns.", "split": "test"}
+{"question": "What pathogen or environmental factor produces these symptoms?", "answer": "The plant is infected with Tomato Mosaic Virus.", "split": "test"}
+{"question": "Would you deliver a comprehensive visual analysis of this plant specimen?", "answer": "The mosaic pattern of light and dark green areas is a classic symptom of ToMV.", "split": "test"}
+{"question": "Given these signs, what would be your clinical determination?", "answer": "The symptoms, especially the olive-green mold on the leaf underside, indicate Leaf Mold.", "split": "test"}
+{"question": "What is the definitive diagnosis for this plant's issues?", "answer": "The plant is infected with Tomato Mosaic Virus.", "split": "test"}
+{"question": "Can you deliver a thorough visual examination of this botanical specimen?", "answer": "This is Tomato Mosaic Virus (ToMV).", "split": "test"}
+{"question": "Would you offer a comprehensive visual breakdown of this plant sample?", "answer": "This is Early Blight, identifiable by the 'target-like' concentric rings in the spots.", "split": "test"}
+{"question": "Please identify the source of this leaf's problems.", "answer": "This is damage from Spider Mites.", "split": "test"}
+{"question": "Please identify the specific problem affecting this plant.", "answer": "The symptoms, especially the olive-green mold on the leaf underside, indicate Leaf Mold.", "split": "test"}
+{"question": "State the specific disease with complete accuracy.", "answer": "The symptoms, especially the olive-green mold on the leaf underside, indicate Leaf Mold.", "split": "test"}
+{"question": "What factors culminate in these visible signs?", "answer": "The plant is infected with Target Spot fungus.", "split": "test"}
+{"question": "How would you assess the general health status of this plant specimen?", "answer": "The pest responsible is the Two-spotted spider mite.", "split": "test"}
+{"question": "Which factors result in these visible symptoms?", "answer": "The symptoms are characteristic of Leaf scorch.", "split": "test"}
+{"question": "What apparent characteristics and observable properties define this plant specimen?", "answer": "The plant is suffering from a Late Blight infection.", "split": "test"}
+{"question": "What symptoms might appear if this Strawberry were infected with Leaf scorch?", "answer": "If the plant were healthy, the evidence of orange or brown pustular structures would be absent.", "split": "test"}
+{"question": "What fundamental factor underlies this plant's pathology?", "answer": "The symptoms are characteristic of Common rust.", "split": "test"}
+{"question": "What explains the issues affecting this foliage?", "answer": "The fungus Alternaria solani, which causes Early Blight, is responsible.", "split": "test"}
+{"question": "What brought about this specimen's current state?", "answer": "The symptoms are characteristic of Northern Leaf Blight.", "split": "test"}
+{"question": "Why does this specimen show these signs?", "answer": "The causal agent is the Tomato Yellow Leaf Curl Virus.", "split": "test"}
+{"question": "Would you provide a detailed visual assessment of this plant material?", "answer": "The pest responsible is the Two-spotted spider mite.", "split": "test"}
+{"question": "What attributes would a healthy specimen display that this one is missing?", "answer": "If the plant were healthy, the circular spots with target-like patterns would be absent.", "split": "test"}
+{"question": "Please deliver a comprehensive description of this plant and its current status.", "answer": "This is a Apple leaf suffering from Apple scab.", "split": "test"}
+{"question": "Review the photograph and deliver a comprehensive plant overview.", "answer": "The specimen is healthy.", "split": "test"}
+{"question": "Assess this picture and provide a detailed plant analysis synopsis.", "answer": "This is a Cherry leaf suffering from Powdery mildew.", "split": "test"}
+{"question": "Picture this plant in perfect condition - how would its appearance shift?", "answer": "A healthy leaf would be uniformly green and free of the symptoms of disease.", "split": "test"}
+{"question": "Why does this specimen show these signs?", "answer": "The pest responsible is the Two-spotted spider mite.", "split": "test"}
+{"question": "Characterize the main focal point and distinctive elements visible in this photograph.", "answer": "This is a healthy plant leaf.", "split": "test"}
+{"question": "Detail the primary focal point and significant features present in this photograph.", "answer": "This is a Corn leaf suffering from Common rust.", "split": "test"}
+{"question": "Which symptoms would vanish upon successful disease treatment?", "answer": "A healthy leaf would be uniformly green and free of the yellow spots paired with olive-green undersurface fungus.", "split": "test"}
+{"question": "What rationale explains these symptoms?", "answer": "The symptoms are characteristic of Common rust.", "split": "test"}
+{"question": "What creates these apparent symptomatic features?", "answer": "This is Tomato Mosaic Virus (ToMV).", "split": "test"}
+{"question": "What flora specimens and botanical features can you observe in this photograph?", "answer": "This is Tomato Mosaic Virus (ToMV).", "split": "test"}
+{"question": "Relate everything observable about this plant's current physiological condition.", "answer": "The plant is infected with Target Spot fungus.", "split": "test"}
+{"question": "What factor produces this plant's unhealthy look?", "answer": "This is a fungal disease known as Leaf Mold.", "split": "test"}
+{"question": "Which features would exist in a healthy version that this plant doesn't have?", "answer": "If the plant were healthy, the yellow spots paired with olive-green undersurface fungus would be absent.", "split": "test"}
+{"question": "What factors create these observable defects?", "answer": "This is Septoria Leaf Spot, characterized by small, circular spots with dark borders.", "split": "test"}
+{"question": "Which disease or problem specifically affects this specimen?", "answer": "The plant is suffering from a fungal infection: Septoria Leaf Spot.", "split": "test"}
+{"question": "In what ways does this plant's appearance differ from optimal health conditions?", "answer": "A healthy leaf would be uniformly green and free of the light-dark green mosaic arrangements.", "split": "test"}
+{"question": "Identify the agent responsible for these disease signs.", "answer": "These 'bullseye' lesions are a tell-tale sign of Early Blight.", "split": "test"}
+{"question": "What is the health condition of this vegetation?", "answer": "The fungus Alternaria solani, which causes Early Blight, is responsible.", "split": "test"}
+{"question": "Furnish a complete description of the plant's morphological features and condition.", "answer": "This is a Apple leaf suffering from Cedar apple rust.", "split": "test"}
+{"question": "Please give the official disease classification for this foliage.", "answer": "The mosaic pattern of light and dark green areas is a classic symptom of ToMV.", "split": "test"}
+{"question": "What diagnosis can be made from these visual indicators?", "answer": "The diagnosis is Septoria Leaf Spot.", "split": "test"}
+{"question": "What pathological issue is this plant facing?", "answer": "Leaf blight Isariopsis Leaf Spot", "split": "test"}
+{"question": "What primary agent is at the core of this condition?", "answer": "The fungus Alternaria solani, which causes Early Blight, is responsible.", "split": "test"}
+{"question": "How would this plant appear different if it were in ideal condition?", "answer": "The key visual difference would be the absence of yellow spots paired with olive-green undersurface fungus.", "split": "test"}
+{"question": "Given these signs, what would be your clinical determination?", "answer": "No signs of disease are visible; the plant is in good health.", "split": "test"}
+{"question": "Which causative agent is responsible for these disease signs?", "answer": "The plant is infected with Target Spot fungus.", "split": "test"}
+{"question": "Please state the formal disease designation for this leaf.", "answer": "The disease is Target Spot, marked by dark, concentric 'bullseye' lesions.", "split": "test"}
+{"question": "Identify the factor generating these pathological signs.", "answer": "Diagnosis: Leaf Mold.", "split": "test"}
+{"question": "Identify the agent responsible for these disease signs.", "answer": "The plant is infected with Target Spot fungus.", "split": "test"}
+{"question": "Name the disease with the highest level of specificity.", "answer": "These 'bullseye' lesions are a tell-tale sign of Early Blight.", "split": "test"}
+{"question": "What exact disease or disorder is manifesting in this plant?", "answer": "Northern Leaf Blight", "split": "test"}
+{"question": "Provide all observable information regarding this plant's current condition.", "answer": "This is a Corn leaf suffering from Northern Leaf Blight.", "split": "test"}
+{"question": "Provide an exhaustive assessment of the plant's visual state and condition indicators.", "answer": "This plant appears to be healthy and free of disease.", "split": "test"}
+{"question": "Can you provide an in-depth visual analysis of this botanical material?", "answer": "This is a Squash leaf suffering from Powdery mildew.", "split": "test"}
+{"question": "Which visual characteristics would reappear if this plant achieved health restoration?", "answer": "A healthy leaf would be uniformly green and free of the circular spots with target-like patterns.", "split": "test"}
+{"question": "What is the comprehensive condition evaluation of this plant specimen?", "answer": "This is a Cherry leaf suffering from Powdery mildew.", "split": "test"}
+{"question": "What pathology is evident in this specimen?", "answer": "This is damage from Spider Mites.", "split": "test"}
+{"question": "Study the picture and provide a comprehensive plant condition summary.", "answer": "The fungus Alternaria solani, which causes Early Blight, is responsible.", "split": "test"}
+{"question": "What's behind the issues observed in this leaf?", "answer": "The symptoms are characteristic of Esca Black Measles.", "split": "test"}
+{"question": "Given the observable symptoms, what disease is present?", "answer": "Cedar apple rust", "split": "test"}
+{"question": "Please provide the exact disease nomenclature for these symptoms.", "answer": "The fungus Alternaria solani, which causes Early Blight, is responsible.", "split": "test"}
+{"question": "What is your authoritative diagnosis based on these indicators?", "answer": "Esca Black Measles", "split": "test"}
+{"question": "What visual departures from normal health conditions are observable?", "answer": "A healthy version of this plant would not exhibit the yellow spots paired with olive-green undersurface fungus.", "split": "test"}
+{"question": "What brings about these observable symptoms?", "answer": "The symptoms are characteristic of Common rust.", "split": "test"}
+{"question": "Which visual characteristics would reappear if this plant recovered optimal condition?", "answer": "If the plant were healthy, the yellow spots paired with olive-green undersurface fungus would be absent.", "split": "test"}
+{"question": "Review the photograph and deliver a comprehensive plant overview.", "answer": "This is a Squash leaf suffering from Powdery mildew.", "split": "test"}
+{"question": "What disease indicators would be missing in a healthy version of this plant?", "answer": "If the plant were healthy, the light-dark green mosaic arrangements would be absent.", "split": "test"}
+{"question": "I require the proper pathological terminology for this condition.", "answer": "The mosaic pattern of light and dark green areas is a classic symptom of ToMV.", "split": "test"}
+{"question": "Envision this specimen in ideal health - what visual modifications would occur?", "answer": "A healthy leaf would be uniformly green and free of the circular spots with target-like patterns.", "split": "test"}
+{"question": "Can you state the formal name of this plant condition?", "answer": "No signs of disease are visible; the plant is in good health.", "split": "test"}
+{"question": "What creates these apparent symptomatic features?", "answer": "The plant is infected with Tomato Mosaic Virus.", "split": "test"}
+{"question": "What vegetation characteristics and plant structures are present in this photograph?", "answer": "The mosaic pattern of light and dark green areas is a classic symptom of ToMV.", "split": "test"}
+{"question": "Based on symptom analysis, what is your final diagnosis?", "answer": "The mosaic pattern of light and dark green areas is a classic symptom of ToMV.", "split": "test"}
+{"question": "What fundamental factor underlies this plant's pathology?", "answer": "The plant is affected by Bacterial Spot disease.", "split": "test"}
+{"question": "Based on what's visible, what is the pathological diagnosis?", "answer": "The mosaic pattern of light and dark green areas is a classic symptom of ToMV.", "split": "test"}
+{"question": "Provide the most precise disease identification you can.", "answer": "These 'bullseye' lesions are a tell-tale sign of Early Blight.", "split": "test"}
+{"question": "What factor justifies these symptomatic features?", "answer": "The symptoms are characteristic of Black rot.", "split": "test"}
+{"question": "What disease manifestations would be absent in a healthy plant state?", "answer": "The key visual difference would be the absence of yellow spots paired with olive-green undersurface fungus.", "split": "test"}
+{"question": "Can you state the formal name of this plant condition?", "answer": "The disease is Target Spot, marked by dark, concentric 'bullseye' lesions.", "split": "test"}
+{"question": "What would be your definitive diagnosis considering these symptoms?", "answer": "Esca Black Measles", "split": "test"}
+{"question": "Which causes result in these displayed symptoms?", "answer": "The symptoms are characteristic of Esca Black Measles.", "split": "test"}
+{"question": "Which disease or problem specifically affects this specimen?", "answer": "Esca Black Measles", "split": "test"}
+{"question": "What explains the issues affecting this foliage?", "answer": "The symptoms are characteristic of Esca Black Measles.", "split": "test"}
+{"question": "Why is this plant displaying these symptoms?", "answer": "This is damage from Spider Mites.", "split": "test"}
+{"question": "What is the health condition of this vegetation?", "answer": "This is Bacterial Spot. Note the small, dark, water-soaked lesions.", "split": "test"}
+{"question": "What accounts for the abnormalities in this leaf?", "answer": "The diagnosis is Target Spot.", "split": "test"}
+{"question": "What features would be evident in a healthy version that this specimen is missing?", "answer": "The key visual difference would be the absence of light-dark green mosaic arrangements.", "split": "test"}
+{"question": "Please deliver a comprehensive description of this plant and its current status.", "answer": "This is a Squash leaf suffering from Powdery mildew.", "split": "test"}
+{"question": "Can you identify the specific ailment affecting this vegetation?", "answer": "The symptoms, especially the olive-green mold on the leaf underside, indicate Leaf Mold.", "split": "test"}
+{"question": "Why are these symptoms appearing on this plant?", "answer": "This is Tomato Mosaic Virus (ToMV).", "split": "test"}
+{"question": "Can you identify why this leaf is experiencing problems?", "answer": "The symptoms are characteristic of Northern Leaf Blight.", "split": "test"}
+{"question": "What symptoms might appear if this Corn were infected with Cercospora leaf spot Gray leaf spot?", "answer": "The key visual difference would be the absence of evidence of orange or brown pustular structures.", "split": "test"}
+{"question": "What factor justifies these symptomatic features?", "answer": "The mosaic pattern of light and dark green areas is a classic symptom of ToMV.", "split": "test"}
+{"question": "Lead me through the leaf-related observations in this photograph.", "answer": "The mosaic pattern of light and dark green areas is a classic symptom of ToMV.", "split": "test"}
+{"question": "Envision this specimen restored to health - what visual alterations would occur?", "answer": "A healthy version of this plant would not exhibit the yellow spots paired with olive-green undersurface fungus.", "split": "test"}
+{"question": "What rationale explains these symptoms?", "answer": "The stippling and fine webbing are clear signs of a Spider Mite infestation.", "split": "test"}
+{"question": "What brought about this specimen's current state?", "answer": "This is a fungal disease known as Leaf Mold.", "split": "test"}
+{"question": "Would you deliver a comprehensive visual analysis of this plant specimen?", "answer": "This is a Squash leaf suffering from Powdery mildew.", "split": "test"}
+{"question": "State the specific disease with complete accuracy.", "answer": "This is a healthy plant leaf.", "split": "test"}
+{"question": "Which factor or pathogen creates these disease indicators?", "answer": "The symptoms are characteristic of Northern Leaf Blight.", "split": "test"}
+{"question": "What pathological condition do these visual signs indicate?", "answer": "The diagnosis is Target Spot.", "split": "test"}
+{"question": "Compare this leaf to normal healthy specimens - what stands out most?", "answer": "A healthy leaf would be uniformly green and free of the symptoms of disease.", "split": "test"}
+{"question": "Assess this picture and provide a summarized botanical evaluation.", "answer": "This is a Grape leaf suffering from Black rot.", "split": "test"}
+{"question": "What factors culminate in these visible signs?", "answer": "This is Septoria Leaf Spot, characterized by small, circular spots with dark borders.", "split": "test"}
+{"question": "Please provide an exact diagnosis for this plant's problems.", "answer": "The disease is Target Spot, marked by dark, concentric 'bullseye' lesions.", "split": "test"}
+{"question": "Which disease or problem specifically affects this specimen?", "answer": "This is Early Blight, identifiable by the 'target-like' concentric rings in the spots.", "split": "test"}
+{"question": "I require a comprehensive description of this specimen and its current condition.", "answer": "The symptoms, especially the olive-green mold on the leaf underside, indicate Leaf Mold.", "split": "test"}
+{"question": "Why does this specimen show these signs?", "answer": "The symptoms are characteristic of Northern Leaf Blight.", "split": "test"}
+{"question": "What has caused this plant's current pathological state?", "answer": "The symptoms are characteristic of Powdery mildew.", "split": "test"}
+{"question": "What disease manifestations would be absent in a healthy plant state?", "answer": "A healthy version of this plant would not exhibit the circular spots with target-like patterns.", "split": "test"}
+{"question": "How does this leaf differ from healthy examples, and what's most evident?", "answer": "A healthy version of this plant would not exhibit the circular spots with target-like patterns.", "split": "test"}
+{"question": "Can you trace the primary source of these symptoms?", "answer": "The plant is infected with Target Spot fungus.", "split": "test"}
+{"question": "What creates this plant's pathological appearance?", "answer": "The plant is suffering from a fungal infection: Septoria Leaf Spot.", "split": "test"}
+{"question": "Evaluate the image and present a thorough plant specimen synopsis.", "answer": "The symptoms, especially the olive-green mold on the leaf underside, indicate Leaf Mold.", "split": "test"}
+{"question": "What's causing this plant's diseased appearance?", "answer": "The large, dark, water-soaked lesions are a key sign of Late Blight.", "split": "test"}
+{"question": "What is the proper diagnostic terminology for these symptoms?", "answer": "Leaf blight Isariopsis Leaf Spot", "split": "test"}
+{"question": "Name the pathogen or factor causing these manifestations.", "answer": "The diagnosis is Bacterial Spot.", "split": "test"}
+{"question": "Can you diagnose the condition plaguing this specimen?", "answer": "The symptoms, especially the olive-green mold on the leaf underside, indicate Leaf Mold.", "split": "test"}
+{"question": "Please determine what causes these symptomatic features.", "answer": "The diagnosis is Bacterial Spot.", "split": "test"}
+{"question": "Please identify the specific problem affecting this plant.", "answer": "The disease is Target Spot, marked by dark, concentric 'bullseye' lesions.", "split": "test"}
+{"question": "Which factor is the source of these disease manifestations?", "answer": "The symptoms are characteristic of Northern Leaf Blight.", "split": "test"}
+{"question": "What ailment is affecting this plant specimen?", "answer": "Diagnosis: Leaf Mold.", "split": "test"}
+{"question": "Which particular pathology is impacting this specimen?", "answer": "The disease is Target Spot, marked by dark, concentric 'bullseye' lesions.", "split": "test"}
+{"question": "Given these manifestations, what is your formal assessment?", "answer": "The diagnosis is Septoria Leaf Spot.", "split": "test"}
+{"question": "Which factors result in these visible symptoms?", "answer": "The symptoms are characteristic of Esca Black Measles.", "split": "test"}
+{"question": "Which apparent characteristics and features define this botanical sample?", "answer": "The mosaic pattern of light and dark green areas is a classic symptom of ToMV.", "split": "test"}
+{"question": "Can you state the formal name of this plant condition?", "answer": "The plant is infected with Tomato Mosaic Virus.", "split": "test"}
+{"question": "Share all observable information about this plant's existing health parameters.", "answer": "This is a Grape leaf suffering from Leaf blight Isariopsis Leaf Spot.", "split": "test"}
+{"question": "What is the original cause of this plant's disease state?", "answer": "The symptoms are characteristic of Cercospora leaf spot Gray leaf spot.", "split": "test"}
+{"question": "How does this leaf differ from healthy examples, and what's most evident?", "answer": "A healthy version of this plant would not exhibit the yellow spots paired with olive-green undersurface fungus.", "split": "test"}
+{"question": "Examine this photograph and deliver a detailed botanical analysis.", "answer": "The mosaic pattern of light and dark green areas is a classic symptom of ToMV.", "split": "test"}
+{"question": "What pathological issue is this plant facing?", "answer": "This is Tomato Mosaic Virus (ToMV).", "split": "test"}
+{"question": "What accounts for the visual irregularities present?", "answer": "The plant is suffering from a fungal infection: Septoria Leaf Spot.", "split": "test"}
+{"question": "Describe the primary focus and prominent elements observable in this photograph.", "answer": "The mosaic pattern of light and dark green areas is a classic symptom of ToMV.", "split": "test"}
+{"question": "What exact disorder or disease is present in this plant?", "answer": "The plant is infected with Tomato Mosaic Virus.", "split": "test"}
+{"question": "What pathological issue is this plant facing?", "answer": "Cedar apple rust", "split": "test"}
+{"question": "Can you diagnose the condition plaguing this specimen?", "answer": "The plant is affected by Bacterial Spot disease.", "split": "test"}
+{"question": "What plant materials and characteristics can you identify in this photograph?", "answer": "This is a Corn leaf suffering from Northern Leaf Blight.", "split": "test"}
+{"question": "Can you determine what's ailing this specimen?", "answer": "Cedar apple rust", "split": "test"}
+{"question": "Can you offer a thorough visual assessment of this botanical sample?", "answer": "This is a Cherry leaf suffering from Powdery mildew.", "split": "test"}
+{"question": "Can you offer a thorough visual assessment of this botanical sample?", "answer": "This is a Squash leaf suffering from Powdery mildew.", "split": "test"}
+{"question": "Please describe what causes these visual anomalies.", "answer": "The symptoms are characteristic of Leaf scorch.", "split": "test"}
+{"question": "Which causes result in these displayed symptoms?", "answer": "The symptoms are characteristic of Common rust.", "split": "test"}
+{"question": "What creates these apparent symptomatic features?", "answer": "This is a fungal disease known as Leaf Mold.", "split": "test"}
+{"question": "What basic factor initiated this plant's problems?", "answer": "The symptoms, especially the olive-green mold on the leaf underside, indicate Leaf Mold.", "split": "test"}
+{"question": "Can you trace the ultimate source of this pathology?", "answer": "Diagnosis: Leaf Mold.", "split": "test"}
+{"question": "What distinguishing traits and characteristics are apparent in this plant specimen?", "answer": "This is a Corn leaf suffering from Common rust.", "split": "test"}
+{"question": "What vegetation characteristics and plant structures are present in this photograph?", "answer": "This is a Grape leaf suffering from Black rot.", "split": "test"}
+{"question": "Please identify the source of this leaf's problems.", "answer": "The symptoms are characteristic of Common rust.", "split": "test"}
+{"question": "Please state the formal disease designation for this leaf.", "answer": "This is a fungal disease known as Leaf Mold.", "split": "test"}
+{"question": "Can you offer a thorough visual assessment of this botanical sample?", "answer": "This is a Apple leaf suffering from Apple scab.", "split": "test"}
+{"question": "Why is this plant displaying these symptoms?", "answer": "The symptoms are characteristic of Apple scab.", "split": "test"}
+{"question": "Is precise disease identification possible from these visual symptoms?", "answer": "Cercospora leaf spot Gray leaf spot", "split": "test"}
+{"question": "Characterize the main focal point and distinctive elements visible in this photograph.", "answer": "This is a Corn leaf suffering from Cercospora leaf spot Gray leaf spot.", "split": "test"}
+{"question": "Identify the factor generating these pathological signs.", "answer": "The symptoms are characteristic of Cercospora leaf spot Gray leaf spot.", "split": "test"}
+{"question": "Compare this specimen to optimal leaf health - what features are prominent?", "answer": "A healthy version of this plant would not exhibit the circular spots with target-like patterns.", "split": "test"}
+{"question": "What is the health condition of this vegetation?", "answer": "The plant is suffering from a Late Blight infection.", "split": "test"}
+{"question": "Why does this specimen show these signs?", "answer": "The symptoms are characteristic of Common rust.", "split": "test"}
+{"question": "How would you assess the general health status of this plant specimen?", "answer": "This is a Grape leaf suffering from Leaf blight Isariopsis Leaf Spot.", "split": "test"}
+{"question": "Name the causal organism or condition present.", "answer": "The leaf shows symptoms of Early Blight.", "split": "test"}
+{"question": "Can you trace the ultimate source of this pathology?", "answer": "The symptoms are characteristic of Esca Black Measles.", "split": "test"}
+{"question": "What observable traits and distinguishing elements characterize this plant specimen?", "answer": "This is a Squash leaf suffering from Powdery mildew.", "split": "test"}
+{"question": "What's causing this plant's diseased appearance?", "answer": "This is Tomato Mosaic Virus (ToMV).", "split": "test"}
+{"question": "What differentiating features separate this plant from healthy reference standards?", "answer": "A healthy leaf would be uniformly green and free of the light-dark green mosaic arrangements.", "split": "test"}
+{"question": "Can you trace the cause of this vegetation's appearance?", "answer": "The plant is infected with Tomato Mosaic Virus.", "split": "test"}
+{"question": "Which visual abnormalities would disappear after disease elimination?", "answer": "A healthy version of this plant would not exhibit the light-dark green mosaic arrangements.", "split": "test"}
+{"question": "Which factor accounts for this specimen's condition?", "answer": "The symptoms are characteristic of Leaf blight Isariopsis Leaf Spot.", "split": "test"}
+{"question": "What has caused this plant's current pathological state?", "answer": "The symptoms are characteristic of Apple scab.", "split": "test"}
+{"question": "Can you determine the precise pathological condition present?", "answer": "This is Septoria Leaf Spot, characterized by small, circular spots with dark borders.", "split": "test"}
+{"question": "What foundational issue created this plant's state?", "answer": "This is Early Blight, identifiable by the 'target-like' concentric rings in the spots.", "split": "test"}
+{"question": "What disease state does this plant exhibit?", "answer": "Cedar apple rust", "split": "test"}
+{"question": "Can you determine the foundational cause of these signs?", "answer": "The symptoms are characteristic of Common rust.", "split": "test"}
+{"question": "Would you deliver a comprehensive visual analysis of this plant specimen?", "answer": "This is a Grape leaf suffering from Leaf blight Isariopsis Leaf Spot.", "split": "test"}
+{"question": "Can you determine the origin of this specimen's poor health?", "answer": "The plant is infected with Tomato Mosaic Virus.", "split": "test"}
+{"question": "What would be your definitive diagnosis considering these symptoms?", "answer": "The mosaic pattern of light and dark green areas is a classic symptom of ToMV.", "split": "test"}
+{"question": "Which visual features would return if this plant achieved optimal restoration?", "answer": "The key visual difference would be the absence of light-dark green mosaic arrangements.", "split": "test"}
+{"question": "What fundamental factor produces these plant symptoms?", "answer": "This is damage from Spider Mites.", "split": "test"}
+{"question": "What visual transformations would occur if this specimen reached perfect condition?", "answer": "The key visual difference would be the absence of circular spots with target-like patterns.", "split": "test"}
+{"question": "What exact disorder or disease is present in this plant?", "answer": "The plant is infected with Target Spot fungus.", "split": "test"}
+{"question": "Can you identify the primary source of this condition?", "answer": "The symptoms are characteristic of Esca Black Measles.", "split": "test"}
+{"question": "Can you determine why this foliage is compromised?", "answer": "The symptoms, especially the olive-green mold on the leaf underside, indicate Leaf Mold.", "split": "test"}
+{"question": "Offer a comprehensive review of this plant's appearance and health manifestations.", "answer": "The plant is infected with Tomato Mosaic Virus.", "split": "test"}
+{"question": "What pathogen or environmental factor produces these symptoms?", "answer": "The symptoms are characteristic of Leaf scorch.", "split": "test"}
+{"question": "Would you offer a comprehensive visual breakdown of this plant sample?", "answer": "This is Tomato Mosaic Virus (ToMV).", "split": "test"}
+{"question": "What observable differences distinguish this plant from normal health parameters?", "answer": "If the plant were healthy, the light-dark green mosaic arrangements would be absent.", "split": "test"}
+{"question": "Please provide a complete characterization of this plant and its observable state.", "answer": "The symptoms, especially the olive-green mold on the leaf underside, indicate Leaf Mold.", "split": "test"}
+{"question": "Which condition is affecting this plant's health?", "answer": "Esca Black Measles", "split": "test"}
+{"question": "What primary agent generates these symptomatic features?", "answer": "The plant is affected by Bacterial Spot disease.", "split": "test"}
+{"question": "Contrast this leaf with healthy foliage standards - what's most distinctive?", "answer": "The key visual difference would be the absence of light-dark green mosaic arrangements.", "split": "test"}
+{"question": "What brought about this specimen's current state?", "answer": "The diagnosis is Bacterial Spot.", "split": "test"}
+{"question": "What generates the apparent flaws in this plant?", "answer": "The fungus Alternaria solani, which causes Early Blight, is responsible.", "split": "test"}
+{"question": "Describe all identifiable features of this plant's current developmental state.", "answer": "The leaf shows symptoms of Early Blight.", "split": "test"}
+{"question": "How would this plant's look change if it achieved optimal health status?", "answer": "If the plant were healthy, the circular spots with target-like patterns would be absent.", "split": "test"}
+{"question": "State the specific disease with complete accuracy.", "answer": "Cedar apple rust", "split": "test"}
+{"question": "Please explain the cause of these observable problems.", "answer": "The symptoms are characteristic of Apple scab.", "split": "test"}
+{"question": "Generate a thorough report on the plant's visual features and physiological status.", "answer": "This is a Apple leaf suffering from Apple scab.", "split": "test"}
+{"question": "What caused this vegetation's present condition?", "answer": "The leaf shows symptoms of Early Blight.", "split": "test"}
+{"question": "Examine this photograph and deliver a comprehensive plant overview.", "answer": "This is a Corn leaf suffering from Common rust.", "split": "test"}
+{"question": "What observable attributes and identifying characteristics are evident in this plant specimen?", "answer": "This is a Cherry leaf suffering from Powdery mildew.", "split": "test"}
+{"question": "What symptoms might appear if this Potato were infected with Late blight?", "answer": "A healthy leaf would be uniformly green and free of the leaf edge browning and necrosis.", "split": "test"}
+{"question": "What factors have led to this leaf's problems?", "answer": "The stippling and fine webbing are clear signs of a Spider Mite infestation.", "split": "test"}
+{"question": "What would be your definitive diagnosis considering these symptoms?", "answer": "Cedar apple rust", "split": "test"}
+{"question": "Please determine what causes these symptomatic features.", "answer": "The symptoms are characteristic of Esca Black Measles.", "split": "test"}
+{"question": "Study the picture and provide a comprehensive plant condition summary.", "answer": "This is a Grape leaf suffering from Leaf blight Isariopsis Leaf Spot.", "split": "test"}
+{"question": "Can you trace the cause of this vegetation's appearance?", "answer": "The fungus Alternaria solani, which causes Early Blight, is responsible.", "split": "test"}
+{"question": "Which disease-causing factor is behind these signs?", "answer": "This is Tomato Mosaic Virus (ToMV).", "split": "test"}
+{"question": "What characteristics would a healthy specimen possess that this plant is missing?", "answer": "If the plant were healthy, the light-dark green mosaic arrangements would be absent.", "split": "test"}
+{"question": "What key indicators distinguish this plant from normal, healthy appearance?", "answer": "A healthy leaf would be uniformly green and free of the yellow spots paired with olive-green undersurface fungus.", "split": "test"}
+{"question": "Evaluate the image content and present a botanical specimen summary.", "answer": "This is a Apple leaf suffering from Black rot.", "split": "test"}
+{"question": "Can you provide a precise disease identification based on visual evidence?", "answer": "No signs of disease are visible; the plant is in good health.", "split": "test"}
+{"question": "Share comprehensive details about this specimen's present status and characteristics.", "answer": "Diagnosis: Leaf Mold.", "split": "test"}
+{"question": "What precise pathological condition is this plant experiencing?", "answer": "Northern Leaf Blight", "split": "test"}
+{"question": "Which disease affects this specimen?", "answer": "Esca Black Measles", "split": "test"}
+{"question": "What is the source of this plant's health status?", "answer": "The symptoms are characteristic of Leaf blight Isariopsis Leaf Spot.", "split": "test"}
+{"question": "Would you deliver a detailed visual evaluation of this plant specimen?", "answer": "This is a Corn leaf suffering from Common rust.", "split": "test"}
+{"question": "What disease or disorder is this plant experiencing?", "answer": "Leaf blight Isariopsis Leaf Spot", "split": "test"}
+{"question": "Picture this plant in perfect condition - how would its appearance shift?", "answer": "The key visual difference would be the absence of circular spots with target-like patterns.", "split": "test"}
+{"question": "What's behind the issues observed in this leaf?", "answer": "The plant is infected with Tomato Mosaic Virus.", "split": "test"}
+{"question": "What is the definitive diagnosis for this plant's issues?", "answer": "This is Tomato Mosaic Virus (ToMV).", "split": "test"}
+{"question": "Can you deliver a detailed visual analysis of this botanical specimen?", "answer": "This is a Strawberry leaf suffering from Leaf scorch.", "split": "test"}
+{"question": "Guide me through the leaf-related elements visible in this photograph.", "answer": "This is a Apple leaf suffering from Apple scab.", "split": "test"}
+{"question": "Can you determine the foundational cause of these signs?", "answer": "The symptoms are characteristic of Esca Black Measles.", "split": "test"}
+{"question": "I need a thorough characterization of this botanical sample and its condition.", "answer": "The plant is infected with Tomato Mosaic Virus.", "split": "test"}
+{"question": "Please specify what produces these disease symptoms.", "answer": "The symptoms are characteristic of Leaf blight Isariopsis Leaf Spot.", "split": "test"}
+{"question": "What is the accurate diagnostic term for these symptoms?", "answer": "Northern Leaf Blight", "split": "test"}
+{"question": "What is the medical/botanical diagnosis for these manifestations?", "answer": "The plant is infected with Tomato Mosaic Virus.", "split": "test"}
+{"question": "What conclusion can be drawn from these visual symptoms?", "answer": "This is Late Blight, caused by the oomycete Phytophthora infestans.", "split": "test"}
+{"question": "Given these manifestations, what is your formal assessment?", "answer": "The pest responsible is the Two-spotted spider mite.", "split": "test"}
+{"question": "What accounts for the visual irregularities present?", "answer": "The symptoms are characteristic of Cercospora leaf spot Gray leaf spot.", "split": "test"}
+{"question": "Identify the pathogen or disorder with full precision.", "answer": "The fungus Alternaria solani, which causes Early Blight, is responsible.", "split": "test"}
+{"question": "What fundamental factor produces these plant symptoms?", "answer": "The symptoms are characteristic of Apple scab.", "split": "test"}
+{"question": "Contrast this foliage with healthy standards - what's most noticeable?", "answer": "A healthy version of this plant would not exhibit the circular spots with target-like patterns.", "split": "test"}
+{"question": "Can you offer an extensive visual evaluation of this botanical sample?", "answer": "This is a healthy plant leaf.", "split": "test"}
+{"question": "What visual modifications would occur if this specimen achieved perfect health?", "answer": "A healthy leaf would be uniformly green and free of the circular spots with target-like patterns.", "split": "test"}
+{"question": "Provide a comprehensive assessment of this plant's visual condition and wellness status.", "answer": "This is a Squash leaf suffering from Powdery mildew.", "split": "test"}
+{"question": "Assess this picture and provide a detailed plant analysis synopsis.", "answer": "This is a Grape leaf suffering from Leaf blight Isariopsis Leaf Spot.", "split": "test"}
+{"question": "Detail the primary focal point and significant features present in this photograph.", "answer": "This is a Grape leaf suffering from Leaf blight Isariopsis Leaf Spot.", "split": "test"}
+{"question": "What pathological state is this plant experiencing?", "answer": "Leaf blight Isariopsis Leaf Spot", "split": "test"}
+{"question": "Which features would exist in a healthy version that this plant doesn't have?", "answer": "The key visual difference would be the absence of symptoms of disease.", "split": "test"}
+{"question": "Contrast this plant with optimal health examples and note the variations.", "answer": "If the plant were healthy, the light-dark green mosaic arrangements would be absent.", "split": "test"}
+{"question": "Given these manifestations, what is your formal assessment?", "answer": "This is a healthy plant leaf.", "split": "test"}
+{"question": "How would this plant's appearance change if it achieved optimal health status?", "answer": "A healthy version of this plant would not exhibit the yellow spots paired with olive-green undersurface fungus.", "split": "test"}
+{"question": "Which apparent characteristics and features define this botanical sample?", "answer": "The symptoms, especially the olive-green mold on the leaf underside, indicate Leaf Mold.", "split": "test"}
+{"question": "What distinguishing traits and characteristics are apparent in this plant specimen?", "answer": "This is a fungal disease known as Leaf Mold.", "split": "test"}
+{"question": "How would this plant's appearance change if it achieved optimal health status?", "answer": "A healthy leaf would be uniformly green and free of the circular spots with target-like patterns.", "split": "test"}
+{"question": "What ailment is affecting this plant specimen?", "answer": "The diagnosis is Septoria Leaf Spot.", "split": "test"}
+{"question": "Furnish a complete description of the plant's morphological features and condition.", "answer": "This is Tomato Mosaic Virus (ToMV).", "split": "test"}
+{"question": "What disease determination can be made from this visual data?", "answer": "The mosaic pattern of light and dark green areas is a classic symptom of ToMV.", "split": "test"}
+{"question": "Can you ascertain the specific pathology present in this photograph?", "answer": "Northern Leaf Blight", "split": "test"}
+{"question": "Would you deliver a comprehensive visual analysis of this plant specimen?", "answer": "Diagnosis: Leaf Mold.", "split": "test"}
+{"question": "What's causing this plant's diseased appearance?", "answer": "The symptoms are characteristic of Cedar apple rust.", "split": "test"}
+{"question": "Compare this leaf to optimal health standards - what features are conspicuous?", "answer": "The key visual difference would be the absence of circular spots with target-like patterns.", "split": "test"}
+{"question": "Which agent has led to this plant's current state?", "answer": "The stippling and fine webbing are clear signs of a Spider Mite infestation.", "split": "test"}
+{"question": "Please specify what produces these disease symptoms.", "answer": "This is Septoria Leaf Spot, characterized by small, circular spots with dark borders.", "split": "test"}
+{"question": "Based on symptom analysis, what is your final diagnosis?", "answer": "The diagnosis is Target Spot.", "split": "test"}
+{"question": "What visible attributes and distinguishing marks identify this plant specimen?", "answer": "The mosaic pattern of light and dark green areas is a classic symptom of ToMV.", "split": "test"}
+{"question": "Identify the agent responsible for these disease signs.", "answer": "The symptoms are characteristic of Apple scab.", "split": "test"}
+{"question": "What formal diagnosis would you assign to these symptoms?", "answer": "The stippling and fine webbing are clear signs of a Spider Mite infestation.", "split": "test"}
+{"question": "What fundamental factor produces these plant symptoms?", "answer": "This is Tomato Mosaic Virus (ToMV).", "split": "test"}
+{"question": "Would you provide a comprehensive visual examination of this plant?", "answer": "This is a Corn leaf suffering from Common rust.", "split": "test"}
+{"question": "Can you deliver a detailed visual analysis of this botanical specimen?", "answer": "This is a Corn leaf suffering from Common rust.", "split": "test"}
+{"question": "What is the comprehensive condition evaluation of this plant specimen?", "answer": "This is a Grape leaf suffering from Leaf blight Isariopsis Leaf Spot.", "split": "test"}
+{"question": "What is the recognized pathological diagnosis for these symptoms?", "answer": "The stippling and fine webbing are clear signs of a Spider Mite infestation.", "split": "test"}
+{"question": "State the specific disease with complete accuracy.", "answer": "This is Tomato Mosaic Virus (ToMV).", "split": "test"}
+{"question": "I require a detailed account of this specimen and its visible condition.", "answer": "This is a Cherry leaf suffering from Powdery mildew.", "split": "test"}
+{"question": "What pathogen or environmental factor produces these symptoms?", "answer": "The symptoms are characteristic of Northern Leaf Blight.", "split": "test"}
+{"question": "From the evidence shown, what is the disease diagnosis?", "answer": "The condition is identified as Late Blight.", "split": "test"}
+{"question": "What exact disorder or disease is present in this plant?", "answer": "This plant appears to be healthy and free of disease.", "split": "test"}
+{"question": "What observable traits and distinguishing elements characterize this plant specimen?", "answer": "This is a Grape leaf suffering from Black rot.", "split": "test"}
+{"question": "Can you identify the primary source of this condition?", "answer": "The symptoms are characteristic of Cercospora leaf spot Gray leaf spot.", "split": "test"}
+{"question": "What flora specimens and botanical features can you observe in this photograph?", "answer": "This is a Corn leaf suffering from Common rust.", "split": "test"}
+{"question": "What ailment has this plant contracted?", "answer": "Cercospora leaf spot Gray leaf spot", "split": "test"}
+{"question": "What exact disease or disorder is manifesting in this plant?", "answer": "The plant is infected with Target Spot fungus.", "split": "test"}
+{"question": "Compare this specimen to optimal leaf health - what features are prominent?", "answer": "If the plant were healthy, the yellow spots paired with olive-green undersurface fungus would be absent.", "split": "test"}
+{"question": "Give the most precise diagnostic determination possible.", "answer": "This is Tomato Mosaic Virus (ToMV).", "split": "test"}
+{"question": "Please provide an exhaustive description of this plant and its observable state.", "answer": "This is a Grape leaf suffering from Leaf blight Isariopsis Leaf Spot.", "split": "test"}
+{"question": "What contrasting features distinguish this specimen from healthy reference points?", "answer": "A healthy leaf would be uniformly green and free of the symptoms of disease.", "split": "test"}
+{"question": "Would you deliver a comprehensive visual analysis of this plant specimen?", "answer": "This is a Corn leaf suffering from Common rust.", "split": "test"}
+{"question": "What characteristics would a healthy specimen possess that this plant is missing?", "answer": "A healthy leaf would be uniformly green and free of the yellow spots paired with olive-green undersurface fungus.", "split": "test"}
+{"question": "Contrast this leaf's condition with healthy foliage standards - what's notable?", "answer": "A healthy version of this plant would not exhibit the symptoms of disease.", "split": "test"}
+{"question": "What organism or condition is generating these manifestations?", "answer": "The symptoms are characteristic of Common rust.", "split": "test"}
+{"question": "Relate everything observable about this plant's current physiological condition.", "answer": "This is a Grape leaf suffering from Esca Black Measles.", "split": "test"}
+{"question": "What visible attributes and distinguishing marks identify this plant specimen?", "answer": "This is a Apple leaf suffering from Black rot.", "split": "test"}
+{"question": "Name the exact pathology with maximum specificity.", "answer": "This is a fungal disease known as Leaf Mold.", "split": "test"}
+{"question": "Can you identify the illness affecting this vegetation?", "answer": "The plant is infected with Tomato Mosaic Virus.", "split": "test"}
+{"question": "From the evidence shown, what is the disease diagnosis?", "answer": "The symptoms, especially the olive-green mold on the leaf underside, indicate Leaf Mold.", "split": "test"}
+{"question": "Report all observable characteristics of this specimen's existing condition.", "answer": "The mosaic pattern of light and dark green areas is a classic symptom of ToMV.", "split": "test"}
+{"question": "Please give the official disease classification for this foliage.", "answer": "These 'bullseye' lesions are a tell-tale sign of Early Blight.", "split": "test"}
+{"question": "Name the disease with the highest level of specificity.", "answer": "Esca Black Measles", "split": "test"}
+{"question": "Please identify the specific problem affecting this plant.", "answer": "Diagnosis: Leaf Mold.", "split": "test"}
+{"question": "Why is this plant displaying these symptoms?", "answer": "The plant is infected with Target Spot fungus.", "split": "test"}
+{"question": "Can you provide a precise diagnosis for this plant's condition?", "answer": "Cedar apple rust", "split": "test"}
+{"question": "What pathogenic or environmental agent creates these symptoms?", "answer": "The symptoms are characteristic of Leaf blight Isariopsis Leaf Spot.", "split": "test"}
+{"question": "Please provide a detailed characterization of this plant and its observable state.", "answer": "This is a Corn leaf suffering from Common rust.", "split": "test"}
+{"question": "How would this plant's look change if it achieved optimal health status?", "answer": "If the plant were healthy, the yellow spots paired with olive-green undersurface fungus would be absent.", "split": "test"}
+{"question": "Please explain the cause of these observable problems.", "answer": "The symptoms are characteristic of Cedar apple rust.", "split": "test"}
+{"question": "Compare this leaf to optimal health standards - what features are conspicuous?", "answer": "If the plant were healthy, the light-dark green mosaic arrangements would be absent.", "split": "test"}
+{"question": "Can you determine what's ailing this specimen?", "answer": "This is Tomato Mosaic Virus (ToMV).", "split": "test"}
+{"question": "Given the observable symptoms, what disease is present?", "answer": "The diagnosis is Target Spot.", "split": "test"}
+{"question": "Can you trace the cause of this vegetation's appearance?", "answer": "The symptoms are characteristic of Apple scab.", "split": "test"}
+{"question": "Examine this photograph and deliver a comprehensive plant overview.", "answer": "This is a Strawberry leaf suffering from Leaf scorch.", "split": "test"}
+{"question": "What causative organism or condition produces these symptoms?", "answer": "The symptoms are characteristic of Esca Black Measles.", "split": "test"}
+{"question": "Would you deliver a comprehensive visual analysis of this plant specimen?", "answer": "This is a Cherry leaf suffering from Powdery mildew.", "split": "test"}
+{"question": "What's causing this plant's diseased appearance?", "answer": "The plant is infected with Tomato Mosaic Virus.", "split": "test"}
+{"question": "What specific ailment is responsible for these symptoms?", "answer": "This is Tomato Mosaic Virus (ToMV).", "split": "test"}
+{"question": "Detail everything discernible about this plant's present physiological status.", "answer": "This is a fungal disease known as Leaf Mold.", "split": "test"}
+{"question": "Can you diagnose the condition plaguing this specimen?", "answer": "The leaf shows symptoms of Early Blight.", "split": "test"}
+{"question": "What plant materials and characteristics can you identify in this photograph?", "answer": "This is a Apple leaf suffering from Black rot.", "split": "test"}
+{"question": "Please give the official disease classification for this foliage.", "answer": "Leaf blight Isariopsis Leaf Spot", "split": "test"}
+{"question": "What factor justifies these symptomatic features?", "answer": "The symptoms are characteristic of Leaf scorch.", "split": "test"}
+{"question": "Why are these symptoms appearing on this plant?", "answer": "The symptoms are characteristic of Leaf blight Isariopsis Leaf Spot.", "split": "test"}
+{"question": "Can you clarify the source of these visual imperfections?", "answer": "The symptoms are characteristic of Powdery mildew.", "split": "test"}
+{"question": "What factors create these observable defects?", "answer": "The symptoms are characteristic of Black rot.", "split": "test"}
+{"question": "Contrast this leaf with healthy foliage standards - what's most distinctive?", "answer": "A healthy leaf would be uniformly green and free of the yellow spots paired with olive-green undersurface fungus.", "split": "test"}
+{"question": "Please provide an exact diagnosis for this plant's problems.", "answer": "Leaf blight Isariopsis Leaf Spot", "split": "test"}
+{"question": "What accounts for the visual irregularities present?", "answer": "The symptoms are characteristic of Black rot.", "split": "test"}
+{"question": "Envision this specimen in perfect health - what visual changes would occur?", "answer": "A healthy leaf would be uniformly green and free of the yellow spots paired with olive-green undersurface fungus.", "split": "test"}
+{"question": "Would you offer a comprehensive visual breakdown of this plant sample?", "answer": "This is a Apple leaf suffering from Apple scab.", "split": "test"}
+{"question": "What's causing this plant's diseased appearance?", "answer": "Diagnosis: Leaf Mold.", "split": "test"}
+{"question": "What root factor creates these observable symptoms?", "answer": "Diagnosis: Leaf Mold.", "split": "test"}
+{"question": "What visual transformations would occur if this specimen reached perfect condition?", "answer": "If the plant were healthy, the yellow spots paired with olive-green undersurface fungus would be absent.", "split": "test"}
+{"question": "Evaluate the image and present a thorough plant specimen synopsis.", "answer": "This is Tomato Mosaic Virus (ToMV).", "split": "test"}
+{"question": "Would you provide a comprehensive visual examination of this plant?", "answer": "The mosaic pattern of light and dark green areas is a classic symptom of ToMV.", "split": "test"}
+{"question": "Can you provide a precise diagnosis for this plant's condition?", "answer": "The plant is infected with Tomato Mosaic Virus.", "split": "test"}
+{"question": "Given the observable symptoms, what disease is present?", "answer": "The leaf shows symptoms of Early Blight.", "split": "test"}
+{"question": "What visible attributes and distinguishing marks identify this plant specimen?", "answer": "This is a Corn leaf suffering from Northern Leaf Blight.", "split": "test"}
+{"question": "What essential element produces these pathological symptoms?", "answer": "The diagnosis is Target Spot.", "split": "test"}
+{"question": "Review the photograph and deliver a comprehensive plant overview.", "answer": "The plant is suffering from a Late Blight infection.", "split": "test"}
+{"question": "What basic factor initiated this plant's problems?", "answer": "The symptoms are characteristic of Cercospora leaf spot Gray leaf spot.", "split": "test"}
+{"question": "What pathogenic or environmental agent creates these symptoms?", "answer": "The symptoms are characteristic of Esca Black Measles.", "split": "test"}
+{"question": "What disease manifestations would not be present in a healthy state?", "answer": "The key visual difference would be the absence of circular spots with target-like patterns.", "split": "test"}
+{"question": "Which pathological indicators would not be present in an unaffected specimen?", "answer": "A healthy version of this plant would not exhibit the yellow spots paired with olive-green undersurface fungus.", "split": "test"}
+{"question": "What disease indicators would not appear in a healthy plant specimen?", "answer": "If the plant were healthy, the yellow spots paired with olive-green undersurface fungus would be absent.", "split": "test"}
+{"question": "What is the general condition assessment of this plant specimen?", "answer": "This is a Corn leaf suffering from Common rust.", "split": "test"}
+{"question": "Can you make a definitive disease determination from this image?", "answer": "The plant is infected with Target Spot fungus.", "split": "test"}
+{"question": "What observable attributes and identifying characteristics are evident in this plant specimen?", "answer": "This is a Corn leaf suffering from Common rust.", "split": "test"}
+{"question": "What essential element produces these pathological symptoms?", "answer": "The symptoms are characteristic of Northern Leaf Blight.", "split": "test"}
+{"question": "Relate everything observable about this plant's current physiological condition.", "answer": "Diagnosis: Leaf Mold.", "split": "test"}
+{"question": "What would be your definitive diagnosis considering these symptoms?", "answer": "This is Bacterial Spot. Note the small, dark, water-soaked lesions.", "split": "test"}
+{"question": "Which factor created this plant's health situation?", "answer": "The plant is infected with Tomato Mosaic Virus.", "split": "test"}
+{"question": "How does this leaf differ from healthy examples, and what's most evident?", "answer": "If the plant were healthy, the symptoms of disease would be absent.", "split": "test"}
+{"question": "Guide me through the leaf-related elements visible in this photograph.", "answer": "This is a Corn leaf suffering from Northern Leaf Blight.", "split": "test"}
+{"question": "What specific ailment is responsible for these symptoms?", "answer": "Cercospora leaf spot Gray leaf spot", "split": "test"}
+{"question": "I require a complete account of this specimen and its visible characteristics.", "answer": "The plant is infected with Tomato Mosaic Virus.", "split": "test"}
+{"question": "Would you deliver a detailed visual evaluation of this plant specimen?", "answer": "This is a Grape leaf suffering from Leaf blight Isariopsis Leaf Spot.", "split": "test"}
+{"question": "What pathological issue is this plant facing?", "answer": "Northern Leaf Blight", "split": "test"}
+{"question": "Can you identify the origin of these visible defects?", "answer": "Diagnosis: Leaf Mold.", "split": "test"}
