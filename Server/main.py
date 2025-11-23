@@ -13,19 +13,24 @@ def hello_world():
     checkpointer = SqliteSaver(sqlite3.connect(":memory:", check_same_thread=False))
     orchestrator = OrchestrateAgent(checkpointer=checkpointer)
     initial_state = {
-        "plant": "Tomato",
-        "disease": "yellow leaf curl virus",
-        "crop_stage": "fruit development",
-        "weather": "High humidity",
+        "plant": "Strawberry",
+        "disease": "Leaf Scorch",
+        "crop_stage": "flowering",
+        "weather": "Warm and dry",
         "messages": [],
     }
 
     thread = {"configurable": {"thread_id": "1"}}
-
+    arr = []
     for event in orchestrator.graph.stream(initial_state, thread):
         for v in event.values():
             print(v["messages"])
+            for message in v["messages"]:
+                if hasattr(message, "content"):
+                    arr.append(message)
 
+    print("=" * 80 + "\n Ended....\n" + "=" * 80)
+    print(arr[-2].content) if len(arr) > 0 else ""
     return "Hello, World! "
 
 
