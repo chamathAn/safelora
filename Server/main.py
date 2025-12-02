@@ -13,10 +13,10 @@ def hello_world():
     checkpointer = SqliteSaver(sqlite3.connect(":memory:", check_same_thread=False))
     orchestrator = OrchestrateAgent(checkpointer=checkpointer)
     initial_state = {
-        "plant": "Strawberry",
-        "disease": "Leaf Scorch",
-        "crop_stage": "flowering",
-        "weather": "Warm and dry",
+        "plant": "Tomato",
+        "disease": "Late Blight",
+        "crop_stage": "fruiting",
+        "weather": "Cool nights with heavy moisture",
         "messages": [],
     }
 

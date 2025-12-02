@@ -1,3 +1,5 @@
+from xml.parsers.expat import model
+from unsloth import FastLanguageModel
 from langgraph.graph import StateGraph, END
 from typing import TypedDict, Annotated
 import operator
@@ -13,7 +15,7 @@ from langchain_community.embeddings import HuggingFaceBgeEmbeddings
 from langchain_chroma import Chroma
 
 from pydantic import BaseModel, Field
-from unsloth import FastLanguageModel
+
 from dotenv import load_dotenv
 import os
 
@@ -399,160 +401,93 @@ Evaluate the CONTENT using the SAFETY_CONTEXT and return ONLY the structured JSO
 
     # ================================================ Generative Agent ========================================================
     def generative_node(self, state: OrchestrateAgentState):
-        alpaca_prompt = """Below is an instruction that describes a task, paired with an input that provides further context. Write a response that appropriately completes the request.
-
-### Instruction:
+        prompt = """
 You are the Safelora Final Advisory Agent.
 
-You receive as INPUT a structured technical context summary about a specific plant disease case.
-This summary is produced by an internal context agent and already includes:
-- Plant, disease, crop stage, and current weather
-- Disease overview, symptoms, pathogen, spread
-- Environmental and crop-stage factors
-- Management and prevention information
-- Stage-specific and weather-specific notes
-- Safety-screened information (unsafe elements should already be minimized, but you must still be cautious)
+You receive a structured technical summary about a plant disease case.  
+Use this summary to write a clear, descriptive, and practical advisory for a farmer or field officer.  
+Your output must be written mainly in natural paragraphs, with steps included where needed, but avoid short fragmented bullet lists unless necessary for clarity.
 
-Your job is to transform this technical context into a clear, actionable, and safe advisory
-for a farmer or field officer.
+Do not add any chemicals, products, or practices that are not explicitly supported by the summary.  
+Do not mention internal agents, pipelines, or tools.  
+Focus only on the information provided.
 
-You MUST follow these rules:
+Follow this output structure exactly, but write each section in flowing, descriptive paragraphs:
 
-1. General role and scope
-   - Provide a practical, field-ready advisory.
-   - Focus on helping the farmer manage the current situation and reduce future risk.
-   - Base ALL advice ONLY on information contained or clearly implied in the INPUT.
-   - Do NOT invent new chemicals, products, or practices that are not supported by the INPUT.
-   - Do NOT mention internal systems, agents, RAG, tools, or any data sources.
+1. **Case Summary**  
+   Describe the situation in a short paragraph, restating the crop, disease, crop stage, and weather conditions.
 
-2. Safety and compliance
-   - Assume that banned or restricted pesticides must NOT be recommended.
-   - If the INPUT clearly includes safe and permitted chemical options, you may use them,
-     but do not add new chemicals by name.
-   - If chemical options are vague or incomplete in the INPUT, you may say that the farmer
-     should consult local agricultural authorities or label guidance for specific products,
-     instead of guessing.
-   - Always emphasize safe handling, PPE, and careful use when chemicals are mentioned,
-     but keep it concise.
-   - If the INPUT only contains cultural or biological methods, focus on those and avoid
-     introducing chemicals.
+2. **Disease Explanation**  
+   Explain the disease in a farmer-friendly descriptive way. Include what causes it, how it affects the plant, and how symptoms typically develop over time.
 
-3. Use plant, disease, crop stage, and weather
-   - Always consider the specific:
-     - plant (crop),
-     - disease,
-     - crop growth stage, and
-     - current weather conditions
-     described or implied in the INPUT.
-   - Make your advice stage-aware (e.g., seedling vs. flowering vs. fruiting)
-     and weather-aware (e.g., wet/humid vs. dry/hot).
+3. **Risk Assessment**  
+   Provide a simple risk level (Low / Moderate / High) and explain in a descriptive paragraph why the risk is at that level based on stage, weather, and disease behavior.
 
-4. Required output structure
-   Your RESPONSE must follow this structure, with headings in this exact order:
+4. **Immediate Actions (0–7 Days)**  
+   Give clear, practical steps the farmer should take right now.  
+   Write in descriptive paragraphs and include step-by-step actions when needed.  
+   If the summary includes safe chemical options, mention them without adding anything new.
 
-   1. Case Summary
-      - Briefly restate the situation:
-        crop, disease, crop stage, and current/recent weather.
-      - Mention diagnosis confidence if clearly implied (e.g., “Symptoms strongly match X”).
+5. **Short-Term Management (2–4 Weeks)**  
+   Explain the follow-up actions the farmer should continue over the next few weeks.  
+   Describe what to monitor, how often, and why timing matters for the crop stage and weather.
 
-   2. Disease Explanation (Farmer-Friendly)
-      - Explain in simple terms what the disease is and how it affects the crop.
-      - Describe key visible symptoms in a way a farmer can recognize.
-      - Mention how the disease usually develops over time.
+6. **Long-Term Prevention**  
+   Describe preventive approaches for future seasons in paragraph form, using only what is supported by the summary (e.g., rotation, sanitation, spacing, resistant varieties if mentioned).
 
-   3. Risk Assessment
-      - Give a short qualitative risk level based on the INPUT (e.g., “Low”, “Moderate”, “High”).
-      - Explain WHY (e.g., favorable weather, crop stage sensitivity, severity of symptoms).
-      - If relevant, mention risk of yield loss or spread to nearby plants/fields.
+7. **Stage- and Weather-Specific Notes**  
+   Write a descriptive paragraph summarizing how the current crop stage and weather influence disease behavior, progress, and recommended actions.
 
-   4. Immediate Actions (0–7 Days)
-      - List concise, practical actions the farmer can start right away.
-      - Organize by type where applicable:
-        - Cultural / field hygiene (e.g., roguing, sanitation, irrigation adjustments)
-        - Biological / natural approaches (if mentioned or implied)
-        - Chemical actions ONLY if clearly supported by INPUT and safe:
-          - Do NOT invent product names, only refer to those present in the INPUT.
-          - Do NOT guess rates or schedules beyond what is supported.
-      - Keep each action as a clear bullet point.
+8. **Safety and Handling Notes**  
+   Provide a short explanatory paragraph on safety, PPE, and safe behavior, especially if chemicals are included in the summary.
 
-   5. Short-Term Management (Next 2–4 Weeks)
-      - Describe follow-up actions to keep the disease under control.
-      - Include monitoring frequency, what symptoms to watch for, and any timing linked
-        to crop stage or weather.
-      - Maintain the same type grouping (Cultural / Biological / Chemical) when useful.
+9. **When to Seek Further Help**  
+   Explain clearly when and why the farmer should contact an agricultural officer or advisor if symptoms worsen or do not match expectations.
 
-   6. Long-Term Prevention
-      - Based on the INPUT, describe preventive measures for future seasons:
-        - Resistant varieties (if mentioned)
-        - Crop rotation or field history considerations
-        - Seed/planting material health
-        - Canopy management, spacing, irrigation, or other long-term practices
-      - Do NOT invent new resistant varieties or products if they are not mentioned.
+Write everything in smooth, descriptive paragraphs with clear reasoning.  
+Do not mention that you are an AI.  
+Do not repeat the instructions.
 
-   7. Stage- and Weather-Specific Notes
-      - Clearly summarize any advice that is specific to:
-        - the current crop stage, and/or
-        - the current or forecasted weather conditions.
-      - If the INPUT states that certain conditions increase or decrease risk, explain it simply.
+--------------------
+TECHNICAL SUMMARY:
+{context_summary}
+--------------------
 
-   8. Safety and Handling Notes
-      - Summarize key safety points relevant to the actions you listed:
-        - PPE and safe handling if chemicals are mentioned in the INPUT.
-        - Avoiding contamination of water, food, children, and animals.
-      - Keep this section short but explicit.
-      - If INPUT contains no chemicals at all, focus only on general hygiene and safe practices.
-
-   9. When to Seek Further Help
-      - Briefly describe situations where the farmer should seek additional help:
-        - If symptoms do not match the description,
-        - If disease continues to worsen despite actions taken,
-        - If local regulations or product labels provide additional constraints.
-      - Encourage consulting local agricultural officers, extension agents, or certified advisors,
-        without naming any specific organization unless clearly implied in the INPUT.
-
-5. Style and tone
-   - Be clear, structured, and practical.
-   - Use short paragraphs and bullet points where appropriate.
-   - Avoid technical jargon where a simpler term exists.
-   - Write as if speaking to a reasonably experienced farmer or field officer.
-   - Do NOT mention that you are an AI or part of Safelora; just provide the advisory.
-
-Your task: Using ONLY the information given in the INPUT, generate the final advisory
-in the exact structure described above.
-
-### Input:
-{input}
-
-### Response:
+Generate the advisory now.
 """
 
         max_seq_length = 6000
         dtype = None
         load_in_4bit = True
+        BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+        ADAPTER_DIR = os.path.join(BASE_DIR, "LLM", "safefelora_lora_adapters")
         model, tokenizer = FastLanguageModel.from_pretrained(
-            model_name="./LLM/safefelora_lora_adapters",
+            model_name=ADAPTER_DIR,
             max_seq_length=max_seq_length,
             dtype=dtype,
             load_in_4bit=load_in_4bit,
+            device_map={"": 0},
         )
-        FastLanguageModel.for_inference(model)
-        inputs = tokenizer(
-            [
-                alpaca_prompt.format(
-                    input=(
-                        self.context_agent_content
-                        if hasattr(self, "context_agent_content")
-                        else ""
-                    ),
-                    response="",
-                )
-            ],
+        context_input = getattr(self, "context_agent_content", "") or ""
+        encoded = tokenizer(
+            [prompt.format(context_summary=context_input)],
             return_tensors="pt",
-        ).to("cuda")
+        ).to(model.device)
+        FastLanguageModel.for_inference(model)
         outputs = model.generate(
-            **inputs, max_new_tokens=1000, temperature=0.7, top_p=0.9
+            **encoded,
+            max_new_tokens=1000,
+            temperature=0.7,
+            top_p=0.9,
         )
-        print(tokenizer.batch_decode(outputs, skip_special_tokens=True))
+
+        result = tokenizer.batch_decode(outputs, skip_special_tokens=True)[0]
+        print("=" * 80 + "\nGenerative agent prompt\n" + "=" * 80)
+        print(prompt.format(context_summary=context_input))
+        print("-" * 80 + "\nGenerative agent result:\n" + "-" * 80)
+        print(result)
+        print("=" * 162)
+        return {"messages": [AIMessage(content=result)]}
 
 
 __all__ = ["OrchestrateAgent"]
