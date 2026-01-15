@@ -1,4 +1,4 @@
 unsloth_compiled_cache/
-server/.env
+# server/.env
 __pycache__/
 .ipynb_checkpoints
