@@ -1,8 +1,11 @@
+import Inputs from "@/components/Inputs";
 import LiveUpdates from "@/components/live-updates";
 
 export default function Home() {
   return (
-    <main className="max-w-xl mx-auto min-h-screen">
+    <main className="container max-w-xl mx-auto min-h-screen">
+      <h1 className={`text-4xl font-bold font-poppins`}>Safelora</h1>
+      <Inputs />
       <LiveUpdates />
     </main>
   );
