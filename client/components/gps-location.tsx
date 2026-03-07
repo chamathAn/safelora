@@ -3,6 +3,7 @@
 import { MapPin } from "lucide-react";
 import { useState } from "react";
 import { Button } from "./ui/button";
+import { Skeleton } from "./ui/skeleton";
 
 type Weather = {
   temperature: number;
@@ -10,13 +11,16 @@ type Weather = {
   time: string;
 };
 
-export default function GpsLocation() {
+type Props = {
+  onChange: (loc: { latitude: number; longitude: number }) => void;
+};
+export default function GpsLocation({ onChange }: Props) {
   const [location, setLocation] = useState<{
     latitude: number;
     longitude: number;
   } | null>(null);
 
-  const [weather, setWeather] = useState<Weather | null>(null);
+  //   const [weather, setWeather] = useState<Weather | null>(null);
   const [loading, setLoading] = useState(false);
 
   const getLocation = () => {
@@ -30,27 +34,27 @@ export default function GpsLocation() {
     navigator.geolocation.getCurrentPosition(
       async (position) => {
         const { latitude, longitude } = position.coords;
-
+        onChange({ latitude, longitude });
         setLocation({ latitude, longitude });
 
-        try {
-          const res = await fetch(
-            `https://api.open-meteo.com/v1/forecast?latitude=${latitude}&longitude=${longitude}&current_weather=true`,
-          );
+        // try {
+        //   const res = await fetch(
+        //     `https://api.open-meteo.com/v1/forecast?latitude=${latitude}&longitude=${longitude}&current_weather=true`,
+        //   );
 
-          const data = await res.json();
+        //   const data = await res.json();
 
-          const cw = data.current_weather;
+        //   const cw = data.current_weather;
 
-          setWeather({
-            temperature: cw.temperature,
-            windspeed: cw.windspeed,
-            time: cw.time,
-          });
-        } catch (err) {
-          console.error(err);
-          alert("Failed to retrieve weather data");
-        }
+        //   setWeather({
+        //     temperature: cw.temperature,
+        //     windspeed: cw.windspeed,
+        //     time: cw.time,
+        //   });
+        // } catch (err) {
+        //   console.error(err);
+        //   alert("Failed to retrieve weather data");
+        // }
 
         setLoading(false);
       },
@@ -63,27 +67,32 @@ export default function GpsLocation() {
   };
 
   return (
-    <div className="flex flex-col gap-4">
+    <div className="flex flex-col items-end gap-4">
       <Button onClick={getLocation} variant="outline" size="icon">
         <MapPin />
       </Button>
 
-      {loading && <p>Getting location & weather...</p>}
+      {loading && (
+        <div className="space-y-2">
+          <Skeleton className="h-4 w-full" />
+          <Skeleton className="h-4 w-full" />
+        </div>
+      )}
 
       {location && (
-        <div>
+        <div className="font-roboto text-end">
           <p>Latitude: {location.latitude}</p>
           <p>Longitude: {location.longitude}</p>
         </div>
       )}
 
-      {weather && (
+      {/* {weather && (
         <div>
           <p>Temperature: {weather.temperature} °C</p>
           <p>Wind Speed: {weather.windspeed} km/h</p>
           <p>Time: {weather.time}</p>
         </div>
-      )}
+      )} */}
     </div>
   );
 }

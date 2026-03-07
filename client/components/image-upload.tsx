@@ -16,8 +16,12 @@ import {
   FileUploadTrigger,
 } from "@/components/ui/file-upload";
 
-export default function ImageUpload() {
-  const [files, setFiles] = React.useState<File[]>([]);
+type Props = {
+  onChange: (file: File | null) => void;
+};
+
+export default function ImageUpload({ onChange }: Props) {
+  const [file, setFile] = React.useState<File[]>([]);
 
   const onFileReject = React.useCallback((file: File, message: string) => {
     toast(message, {
@@ -31,11 +35,14 @@ export default function ImageUpload() {
       maxSize={5 * 1024 * 1024}
       accept="image/png,image/jpeg"
       className="w-full max-w-md"
-      value={files}
-      onValueChange={setFiles}
+      value={file}
+      onValueChange={(f) => {
+        setFile(f);
+        onChange(f[0] ?? null);
+      }}
       onFileReject={onFileReject}
       multiple={false}
-      disabled={files.length >= 1}
+      disabled={file.length >= 1}
     >
       <FileUploadDropzone>
         <div className="flex flex-col items-center gap-1 text-center font-roboto">
@@ -58,7 +65,7 @@ export default function ImageUpload() {
       </FileUploadDropzone>
 
       <FileUploadList>
-        {files.map((file, index) => (
+        {file.map((file, index) => (
           <FileUploadItem key={index} value={file}>
             <FileUploadItemPreview />
             <FileUploadItemMetadata />

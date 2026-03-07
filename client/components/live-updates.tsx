@@ -34,13 +34,6 @@ export default function LiveUpdates() {
     <section>
       <h2>Live Updates</h2>
 
-      <button
-        className="px-4 py-2 bg-gray-600"
-        onClick={() => socketRef.current?.emit("start")}
-      >
-        Start
-      </button>
-
       <div>
         {messages.map((msg, i) => (
           <div key={i}>{msg}</div>

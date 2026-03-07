@@ -8,12 +8,14 @@ import {
   ComboboxItem,
   ComboboxList,
 } from "@/components/ui/combobox";
-
+type Props = {
+  onChange: (value: string | null) => void;
+};
 const CROP_STAGES = ["Initial Crop", "Mid Crop", "Final Crop"] as const;
 
-export default function CropStage() {
+export default function CropStage({ onChange }: Props) {
   return (
-    <Combobox items={CROP_STAGES}>
+    <Combobox items={CROP_STAGES} onValueChange={onChange}>
       <ComboboxInput
         placeholder="Select crop stage"
         readOnly

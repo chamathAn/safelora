@@ -46,8 +46,9 @@ def run_orchestrator():
 
 
 @socketio.on("start")
-def handle_start():
+def handle_start(data):
     print("Start received")
+    print("Data:", data["cropStage"], data["latitude"], data["longitude"])
     socketio.start_background_task(run_orchestrator)
 
 
