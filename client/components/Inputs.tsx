@@ -4,7 +4,7 @@ import GpsLocation from "./gps-location";
 import ImageUpload from "./image-upload";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
-import { z } from "zod";
+import { file, z } from "zod";
 import { Button } from "./ui/button";
 import { io, Socket } from "socket.io-client";
 import { useEffect, useRef } from "react";
@@ -55,11 +55,12 @@ export default function Inputs() {
   register("longitude");
 
   const onSubmit = async (data: FormValues) => {
+    const buffer = await data.image.arrayBuffer();
     socket.emit("start", {
       cropStage: data.cropStage,
       latitude: data.latitude,
       longitude: data.longitude,
-      image: data.image,
+      image: buffer,
     });
     console.log("Submitted:", data);
   };

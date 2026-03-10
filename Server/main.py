@@ -8,6 +8,8 @@ from Agents.orchestrate_agent import OrchestrateAgent
 from langgraph.checkpoint.sqlite import SqliteSaver
 import sqlite3
 
+import requests
+
 app = Flask(__name__)
 
 socketio = SocketIO(
@@ -22,15 +24,14 @@ def handle_connect():
     print("Client connected")
 
 
-def run_orchestrator():
+def run_orchestrator(crop_stage, weather, image):
     checkpointer = SqliteSaver(sqlite3.connect(":memory:", check_same_thread=False))
     orchestrator = OrchestrateAgent(checkpointer=checkpointer)
 
     initial_state = {
-        "plant": "Tomato",
-        "disease": "Late Blight",
-        "crop_stage": "fruiting",
-        "weather": "Cool nights with heavy moisture",
+        "image": image,
+        "crop_stage": crop_stage,
+        "weather": weather,
         "messages": [],
     }
 
@@ -49,7 +50,33 @@ def run_orchestrator():
 def handle_start(data):
     print("Start received")
     print("Data:", data["cropStage"], data["latitude"], data["longitude"])
-    socketio.start_background_task(run_orchestrator)
+    image = data["image"]
+    crop_stage = data["cropStage"]
+    latitude = data["latitude"]
+    longitude = data["longitude"]
+    weather = get_weather(latitude, longitude)
+    print("Weather:", weather)
+    socketio.start_background_task(run_orchestrator, crop_stage, weather, image)
+
+
+def get_weather(latitude, longitude):
+    url = (
+        f"https://api.open-meteo.com/v1/forecast?"
+        f"latitude={latitude}&longitude={longitude}&current_weather=true"
+    )
+
+    res = requests.get(url)
+    data = res.json()
+
+    cw = data["current_weather"]
+
+    weather_summary = (
+        f"Temperature {cw['temperature']}°C, "
+        f"Wind speed {cw['windspeed']} km/h, "
+        f"Time {cw['time']}"
+    )
+
+    return weather_summary
 
 
 if __name__ == "__main__":

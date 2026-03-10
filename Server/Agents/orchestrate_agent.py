@@ -1,5 +1,7 @@
-from xml.parsers.expat import model
+import unsloth
 from unsloth import FastLanguageModel
+import json
+from xml.parsers.expat import model
 from langgraph.graph import StateGraph, END
 from typing import TypedDict, Annotated
 import operator
@@ -18,6 +20,11 @@ from pydantic import BaseModel, Field
 
 from dotenv import load_dotenv
 import os
+import tensorflow as tf
+import numpy as np
+from PIL import Image
+import io
+import keras
 
 load_dotenv()
 TAVILY_API_KEY = os.getenv("TAVILY_API_KEY")
@@ -58,6 +65,7 @@ class SafetyResponse(BaseModel):
 
 
 class OrchestrateAgentState(TypedDict):
+    image: bytes
     plant: str
     disease: str
     crop_stage: str
@@ -68,7 +76,46 @@ class OrchestrateAgentState(TypedDict):
 
 class OrchestrateAgent:
     def __init__(self, checkpointer):
-        self.llm = ChatGroq(model="qwen/qwen3-32b", temperature=0)
+
+        # inference model setup
+        max_seq_length = 6000
+        dtype = None
+        load_in_4bit = True
+
+        BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+        ADAPTER_DIR = os.path.join(BASE_DIR, "LLM", "safefelora_lora_adapters")
+
+        self.model, self.tokenizer = FastLanguageModel.from_pretrained(
+            model_name=ADAPTER_DIR,
+            max_seq_length=max_seq_length,
+            dtype=dtype,
+            load_in_4bit=load_in_4bit,
+            device_map={"": 0},
+        )
+
+        FastLanguageModel.for_inference(self.model)
+
+        # cnn setup
+        BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+
+        CNN_MODEL_PATH = os.path.join(
+            BASE_DIR, "Image Classifier", "PlantVillage_MobileNet_Model.keras"
+        )
+
+        CNN_FEATURES_CLASS_INDICES_PATH = os.path.join(
+            BASE_DIR, "Image Classifier", "class_indices.json"
+        )
+        self.CNN_FEATURES_CLASS_INDICES_PATH = CNN_FEATURES_CLASS_INDICES_PATH
+        self.cnn_model = keras.models.load_model(
+            CNN_MODEL_PATH, compile=False, safe_mode=False
+        )
+
+        # tool and agent setup
+        self.llm = ChatGroq(
+            model="qwen/qwen3-32b",
+            temperature=0,
+            api_key=GROQ_API_KEY,
+        )
 
         self.tools = {t.name: t for t in tools}
         self.llm_with_tools = self.llm.bind_tools(tools)
@@ -77,6 +124,7 @@ class OrchestrateAgent:
         )
 
         workflow = StateGraph(OrchestrateAgentState)
+        workflow.add_node("image_agent", self.image_node)
         workflow.add_node("context_agent", self.context_node)
         workflow.add_node("action", self.tool_executor)
         workflow.add_node("safety_agent", self.safety_node)
@@ -94,11 +142,45 @@ class OrchestrateAgent:
             {True: "generative_agent", False: "context_agent"},
         )
 
+        workflow.add_edge("image_agent", "context_agent")
         workflow.add_edge("action", "context_agent")
         workflow.add_edge("generative_agent", END)
-        workflow.set_entry_point("context_agent")
+        workflow.set_entry_point("image_agent")
 
         self.graph = workflow.compile(checkpointer=checkpointer)
+
+    # ============================================================================= image agent ======================================================================
+    def image_node(self, state: OrchestrateAgentState):
+        print("=" * 80 + "\nImage agent is running....\n" + "=" * 80)
+        image_bytes = state["image"]
+        feature_classes = ""
+        with open(self.CNN_FEATURES_CLASS_INDICES_PATH, "r") as file:
+            feature_classes = {v: k for k, v in json.load(file).items()}
+
+        image_size = 224
+        image = Image.open(io.BytesIO(image_bytes)).convert("RGB")
+        image = image.resize((image_size, image_size))
+        image_array = np.array(image)
+        image_array = image_array / 255.0
+        image_array = np.expand_dims(image_array, axis=0)
+        preds = self.cnn_model.predict(image_array, verbose=0)
+
+        predicted_index = np.argmax(preds)
+        predicted_label = feature_classes[predicted_index]
+        plant, disease = predicted_label.split("___")
+        return {
+            "plant": plant,
+            "disease": disease,
+            "messages": [
+                AIMessage(
+                    content="Image analysis complete. Detected "
+                    + plant
+                    + " with "
+                    + disease
+                    + "."
+                )
+            ],
+        }
 
     # ============================================================================= context agent ======================================================================
 
@@ -456,24 +538,13 @@ TECHNICAL SUMMARY:
 Generate the advisory now.
 """
 
-        max_seq_length = 6000
-        dtype = None
-        load_in_4bit = True
-        BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-        ADAPTER_DIR = os.path.join(BASE_DIR, "LLM", "safefelora_lora_adapters")
-        model, tokenizer = FastLanguageModel.from_pretrained(
-            model_name=ADAPTER_DIR,
-            max_seq_length=max_seq_length,
-            dtype=dtype,
-            load_in_4bit=load_in_4bit,
-            device_map={"": 0},
-        )
+        model = self.model
+        tokenizer = self.tokenizer
         context_input = getattr(self, "context_agent_content", "") or ""
         encoded = tokenizer(
             [prompt.format(context_summary=context_input)],
             return_tensors="pt",
         ).to(model.device)
-        FastLanguageModel.for_inference(model)
         outputs = model.generate(
             **encoded,
             max_new_tokens=1000,

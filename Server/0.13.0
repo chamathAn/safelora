@@ -1,0 +1,35 @@
+Collecting xformers
+  Downloading xformers-0.0.35-py39-none-win_amd64.whl.metadata (1.0 kB)
+Collecting torchao
+  Downloading torchao-0.16.0-py3-none-any.whl.metadata (20 kB)
+Collecting torch>=2.10 (from xformers)
+  Downloading torch-2.10.0-cp312-cp312-win_amd64.whl.metadata (31 kB)
+Requirement already satisfied: numpy in c:\users\chama\anaconda3\envs\pytorch_gpu\lib\site-packages (from xformers) (1.26.4)
+Requirement already satisfied: filelock in c:\users\chama\anaconda3\envs\pytorch_gpu\lib\site-packages (from torch>=2.10->xformers) (3.17.0)
+Requirement already satisfied: typing-extensions>=4.10.0 in c:\users\chama\anaconda3\envs\pytorch_gpu\lib\site-packages (from torch>=2.10->xformers) (4.15.0)
+Collecting sympy>=1.13.3 (from torch>=2.10->xformers)
+  Downloading sympy-1.14.0-py3-none-any.whl.metadata (12 kB)
+Requirement already satisfied: networkx>=2.5.1 in c:\users\chama\anaconda3\envs\pytorch_gpu\lib\site-packages (from torch>=2.10->xformers) (3.5)
+Requirement already satisfied: jinja2 in c:\users\chama\anaconda3\envs\pytorch_gpu\lib\site-packages (from torch>=2.10->xformers) (3.1.6)
+Requirement already satisfied: fsspec>=0.8.5 in c:\users\chama\anaconda3\envs\pytorch_gpu\lib\site-packages (from torch>=2.10->xformers) (2025.9.0)
+Requirement already satisfied: setuptools in c:\users\chama\anaconda3\envs\pytorch_gpu\lib\site-packages (from torch>=2.10->xformers) (80.9.0)
+Requirement already satisfied: mpmath<1.4,>=1.1.0 in c:\users\chama\anaconda3\envs\pytorch_gpu\lib\site-packages (from sympy>=1.13.3->torch>=2.10->xformers) (1.3.0)
+Requirement already satisfied: MarkupSafe>=2.0 in c:\users\chama\anaconda3\envs\pytorch_gpu\lib\site-packages (from jinja2->torch>=2.10->xformers) (3.0.2)
+Downloading xformers-0.0.35-py39-none-win_amd64.whl (2.6 MB)
+   ---------------------------------------- 2.6/2.6 MB 9.5 MB/s  0:00:00
+Downloading torchao-0.16.0-py3-none-any.whl (1.2 MB)
+   ---------------------------------------- 1.2/1.2 MB 19.2 MB/s  0:00:00
+Downloading torch-2.10.0-cp312-cp312-win_amd64.whl (113.8 MB)
+   ---------------------------------------- 113.8/113.8 MB 9.1 MB/s  0:00:12
+Downloading sympy-1.14.0-py3-none-any.whl (6.3 MB)
+   ---------------------------------------- 6.3/6.3 MB 8.4 MB/s  0:00:00
+Installing collected packages: torchao, sympy, torch, xformers
+  Attempting uninstall: sympy
+    Found existing installation: sympy 1.13.1
+    Uninstalling sympy-1.13.1:
+      Successfully uninstalled sympy-1.13.1
+  Attempting uninstall: torch
+    Found existing installation: torch 2.5.1+cu121
+    Uninstalling torch-2.5.1+cu121:
+      Successfully uninstalled torch-2.5.1+cu121
+
