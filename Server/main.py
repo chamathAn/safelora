@@ -1,7 +1,3 @@
-import eventlet
-
-eventlet.monkey_patch()
-
 from flask import Flask
 from flask_socketio import SocketIO, emit
 from Agents.orchestrate_agent import OrchestrateAgent
@@ -13,9 +9,7 @@ import requests
 app = Flask(__name__)
 
 socketio = SocketIO(
-    app,
-    cors_allowed_origins=["http://localhost:3000"],
-    async_mode="eventlet",
+    app, cors_allowed_origins=["http://localhost:3000"], async_mode="threading"
 )
 
 
@@ -43,7 +37,10 @@ def run_orchestrator(crop_stage, weather, image):
             for message in v["messages"]:
                 if hasattr(message, "content"):
                     # print("EMIT:", message.content)
-                    socketio.emit("update", message.content)
+                    if "Case Summary" in str(message.content):
+                        socketio.emit("advisory", message.content)
+                    else:
+                        socketio.emit("update", message.content)
 
 
 @socketio.on("start")

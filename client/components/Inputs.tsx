@@ -4,10 +4,10 @@ import GpsLocation from "./gps-location";
 import ImageUpload from "./image-upload";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
-import { file, z } from "zod";
+import { z } from "zod";
 import { Button } from "./ui/button";
 import { io, Socket } from "socket.io-client";
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import { socket } from "@/lib/socket";
 
 const formSchema = z.object({
@@ -22,6 +22,10 @@ const formSchema = z.object({
 });
 type FormValues = z.infer<typeof formSchema>;
 export default function Inputs() {
+  const [isClient, setIsClient] = useState(false);
+  useEffect(() => {
+    setIsClient(true);
+  }, []);
   const socketRef = useRef<Socket | null>(null);
 
   useEffect(() => {
@@ -66,47 +70,57 @@ export default function Inputs() {
   };
   return (
     <form className="space-y-5" onSubmit={handleSubmit(onSubmit)}>
-      <div className="gap-y-4 flex flex-col justify-center items-end">
-        <h3 className="text-xl font-semibold font-roboto self-start">
-          Upload Image
-        </h3>
-        <ImageUpload
-          onChange={(file) =>
-            setValue("image", file as File, { shouldValidate: true })
-          }
-        />
-        {errors.image && <p className="text-red-500">{errors.image.message}</p>}
-      </div>
-      <div className="gap-y-4 flex justify-between gap-4">
-        <h3 className="text-xl font-semibold font-roboto">Crop Growth Stage</h3>
-        <div className="flex flex-col gap-2">
-          <CropStage
-            onChange={(stage) =>
-              setValue("cropStage", stage, { shouldValidate: true })
-            }
-          />
-          {errors.cropStage && (
-            <p className="text-red-500">{errors.cropStage.message}</p>
-          )}
-        </div>
-      </div>
-      <div className="gap-y-4 flex gap-4">
-        <h3 className="text-xl font-semibold font-roboto">Location</h3>
-        <div className="flex flex-col justify-end items-end gap-2 w-full flex-1">
-          <GpsLocation
-            onChange={(loc) => {
-              setValue("latitude", loc.latitude, { shouldValidate: true });
-              setValue("longitude", loc.longitude, { shouldValidate: true });
-            }}
-          />
-          {(errors.latitude || errors.longitude) && (
-            <p className="text-red-500">
-              {errors.latitude?.message || errors.longitude?.message}
-            </p>
-          )}
-        </div>
-      </div>
-      <Button type="submit">Analyze Disease</Button>
+      {isClient && (
+        <>
+          <div className="gap-y-4 flex flex-col justify-center items-end">
+            <h3 className="text-xl font-semibold font-roboto self-start">
+              Upload Image
+            </h3>
+            <ImageUpload
+              onChange={(file) =>
+                setValue("image", file as File, { shouldValidate: true })
+              }
+            />
+            {errors.image && (
+              <p className="text-red-500">{errors.image.message}</p>
+            )}
+          </div>
+          <div className="gap-y-4 flex justify-between gap-4">
+            <h3 className="text-xl font-semibold font-roboto">
+              Crop Growth Stage
+            </h3>
+            <div className="flex flex-col gap-2">
+              <CropStage
+                onChange={(stage) =>
+                  setValue("cropStage", stage, { shouldValidate: true })
+                }
+              />
+              {errors.cropStage && (
+                <p className="text-red-500">{errors.cropStage.message}</p>
+              )}
+            </div>
+          </div>
+          <div className="gap-y-4 flex gap-4">
+            <h3 className="text-xl font-semibold font-roboto">Location</h3>
+            <div className="flex flex-col justify-end items-end gap-2 w-full flex-1">
+              <GpsLocation
+                onChange={(loc) => {
+                  setValue("latitude", loc.latitude, { shouldValidate: true });
+                  setValue("longitude", loc.longitude, {
+                    shouldValidate: true,
+                  });
+                }}
+              />
+              {(errors.latitude || errors.longitude) && (
+                <p className="text-red-500">
+                  {errors.latitude?.message || errors.longitude?.message}
+                </p>
+              )}
+            </div>
+          </div>
+          <Button type="submit">Analyze Disease</Button>
+        </>
+      )}
     </form>
   );
 }

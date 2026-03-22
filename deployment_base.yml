@@ -1,0 +1,15 @@
+name: pytorch_gpu
+channels:
+  - defaults
+  - https://repo.anaconda.com/pkgs/main
+  - https://repo.anaconda.com/pkgs/r
+  - https://repo.anaconda.com/pkgs/msys2
+dependencies:
+  - torchaudio
+  - torchvision
+  - pytorch-cuda
+  - jupyter
+  - cryptography
+  - flask-socketio
+  - eventlet
+prefix: C:\Users\chama\anaconda3\envs\pytorch_gpu
